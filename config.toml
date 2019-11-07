@@ -13,10 +13,10 @@ theme = "hugo-hero-theme"
     meta_og_type = "website"
     meta_og_url = "https://hugo-hero.netlify.com"
     meta_og_image = "https://raw.githubusercontent.com/JugglerX/hugo-hero-theme/master/images/tn.png"
-    meta_og_description = "EQLabs is a software consultancy based in Victoria, BC."
+    meta_og_description = "EQ Labs is a software company based in Victoria, BC."
     meta_twitter_card = "summary"
-    meta_twitter_site = "@eqlabs"
-    meta_twitter_creator = "@eqlabs"
+    meta_twitter_site = "@labs_eq"
+    meta_twitter_creator = "@labs_eq"
 
 [[menu.main]]
 	name = "Services"
