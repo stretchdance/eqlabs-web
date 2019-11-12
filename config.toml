@@ -1,6 +1,6 @@
 baseURL = "/"
 languageCode = "en-us"
-title = "EQLabs"
+title = "EQ Labs"
 themesDir = "themes"
 theme = "hugo-hero-theme"
 
@@ -19,13 +19,13 @@ theme = "hugo-hero-theme"
     meta_twitter_creator = "@labs_eq"
 
 [[menu.main]]
-	name = "Services"
-	url = "/services/"
+	name = "Products"
+	url = "/products/"
     weight = 1
 
 [[menu.main]]
-    name = "Work"
-    url = "/work/"
+    name = "Solutions"
+    url = "/solutions/"
     weight = 2
 
 [[menu.main]]
