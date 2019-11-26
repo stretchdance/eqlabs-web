@@ -7,6 +7,8 @@ We reduce workplace discrimination by improving manager attitudes and behaviour 
 
 During our discovery interview phase, in conversations with people across a variety of gender and race backgrounds, and at different stages of their careers, one theme was universal: Great managers made all the difference, and Bad Managers were, literally, the worst. 
 
+![Picture of different colors of coffee in mugs][coffee]
+
 # Key Product Features:
 
 EQ Labs' approach is designed to address the *systemic* issues of workplace discrimination. This means we're working to reverse unconscious bias, combat *conscious* bias, and mitigate the impacts of *both* - in the daily interactions of managers with their teams.
@@ -39,3 +41,6 @@ We are now accepting a limited number of pilot engagements. Participating organi
 [3]: https://chelseatroy.com/2018/03/29/why-do-remote-meetings-suck-so-much/
 [4]: https://hbr.org/2016/04/if-theres-only-one-woman-in-your-candidate-pool-theres-statistically-no-chance-shell-be-hired
 [5]: https://osf.io/awz2p/
+
+[coffee]: https://images.unsplash.com/photo-1498804103079-a6351b050096?ixlib=rb-1.2.1&auto=format&fit=crop&w=3334&q=80
+Photo by Nathan Dumlao on Unsplash
