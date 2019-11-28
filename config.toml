@@ -23,10 +23,7 @@ theme = "hugo-hero-theme"
 # 	url = "/products/"
 #     weight = 1
 
-# [[menu.main]]
-#     name = "Solutions"
-#     url = "/solutions/"
-#     weight = 2
+
 
 [[menu.main]]
     name = "About"
@@ -34,9 +31,14 @@ theme = "hugo-hero-theme"
     weight = 1
 
 [[menu.main]]
+    name = "Change"
+    url = "/change/"
+    weight = 2
+
+[[menu.main]]
     name = "Contact"
     url = "/contact/"
-    weight = 2
+    weight = 3
 
 [permalinks]
   post = "/:year/:month/:day/:slug/"
