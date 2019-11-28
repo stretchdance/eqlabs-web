@@ -5,11 +5,11 @@ themesDir = "themes"
 theme = "hugo-hero-theme"
 
 [params]
-  google_analytics_id=""
+  google_analytics_id="UA-153564663-1"
 
   [params.homepage_meta_tags]
-    meta_description = "Hero is a multipurpose Hugo theme with fullscreen hero images and page sections. It contains content types for a business or portfolio site."
-    meta_og_title = "Hugo Hero Theme"
+    meta_description = "EQ Labs provides continuous intervention targeted to minimize workplace discrimination."
+    meta_og_title = "EQ Labs, Inc."
     meta_og_type = "website"
     meta_og_url = "https://hugo-hero.netlify.com"
     meta_og_image = "https://raw.githubusercontent.com/JugglerX/hugo-hero-theme/master/images/tn.png"
@@ -18,25 +18,25 @@ theme = "hugo-hero-theme"
     meta_twitter_site = "@labs_eq"
     meta_twitter_creator = "@labs_eq"
 
-[[menu.main]]
-	name = "Products"
-	url = "/products/"
-    weight = 1
+# [[menu.main]]
+# 	name = "Products"
+# 	url = "/products/"
+#     weight = 1
 
-[[menu.main]]
-    name = "Solutions"
-    url = "/solutions/"
-    weight = 2
+# [[menu.main]]
+#     name = "Solutions"
+#     url = "/solutions/"
+#     weight = 2
 
 [[menu.main]]
     name = "About"
     url = "/about/"
-    weight = 3
+    weight = 1
 
 [[menu.main]]
     name = "Contact"
     url = "/contact/"
-    weight = 4
+    weight = 2
 
 [permalinks]
   post = "/:year/:month/:day/:slug/"
