@@ -8,8 +8,5 @@ heroBackground: 'images/team.jpeg'
 ---
 
 <div>
-{{< content-strip-left "/pages/about" "content1" >}}
-</div>
-<div>
-{{< content-strip-center "/pages/about" "content3" >}}
+{{< content-strip-right "/pages/about" "content3" >}}
 </div>

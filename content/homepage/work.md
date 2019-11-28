@@ -2,8 +2,8 @@
 title: "It's not Rocket Science"
 weight: 1
 background: 'images/coffee.jpg'
-button: 'Our Work'
-buttonLink: 'work'
+button: 'Our Interventions'
+buttonLink: 'change'
 ---
 
 
