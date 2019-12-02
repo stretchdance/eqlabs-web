@@ -13,7 +13,7 @@ theme = "hugo-hero-theme"
     meta_og_title = "EQ Labs, Inc."
     meta_og_type = "website"
     meta_og_url = "https://hugo-hero.netlify.com"
-    meta_og_image = "https://raw.githubusercontent.com/JugglerX/hugo-hero-theme/master/images/tn.png"
+    meta_og_image = "https://www.eqlabs.io/tn.png"
     meta_og_description = "EQ Labs is a software company based in Victoria, BC."
     meta_twitter_card = "summary"
     meta_twitter_site = "@labs_eq"
@@ -27,19 +27,24 @@ theme = "hugo-hero-theme"
 
 
 [[menu.main]]
-    name = "About"
-    url = "/about/"
+    name = "Change"
+    url = "/change/"
     weight = 1
 
 [[menu.main]]
-    name = "Change"
-    url = "/change/"
+    name = "Research"
+    url = "/research/"
     weight = 2
+
+[[menu.main]]
+    name = "About"
+    url = "/about/"
+    weight = 3
 
 [[menu.main]]
     name = "Contact"
     url = "/contact/"
-    weight = 3
+    weight = 4
 
 [permalinks]
   post = "/:year/:month/:day/:slug/"

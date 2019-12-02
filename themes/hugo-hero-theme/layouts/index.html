@@ -1,4 +1,4 @@
-{{ define "title" }}EQ Labs, Inc.{{ end}}
+{{ define "title" }}{{ .Site.Title }}{{ end}}
 {{ define "header_css" }}{{ end }}
 {{ define "body_classes" }}page-home{{ end }}
 {{ define "header_classes" }}header-transparent{{ end }}
@@ -58,8 +58,8 @@
 {{ range first 1 (after 1 $reusablePages) }}
 <div id="home" class="strip bg-primary bg-cover bg-position-top bg-overlay" style='background-image: url("{{ .Params.background | relURL }}");'>
   <div class="container pt-8 pb-8 pb-md-12 pt-md-12">
-    <div class="row /* justify-content-center */ justify-content-start">
-      <div class="col-12 col-md-8 /* text-center */ text-white">
+    <div class="row justify-content-center">
+      <div class="col-12 col-md-8 text-center text-white">
         <h2>{{ .Title }}</h2>
         <p>{{ .Content }}</p>
         <a class="button button-white" href="{{ .Params.buttonLink | relURL }}">{{ .Params.button }}</a>

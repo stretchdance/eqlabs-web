@@ -1,7 +1,7 @@
 ---
 title: "Most Bias Interventions Don't Work"
 weight: 1
-background: 'images/coffee.jpg'
+background: 'images/triadleft.png'
 button: 'Our Interventions'
 buttonLink: 'change'
 ---
@@ -12,7 +12,7 @@ It relies on framing prejudice as a _habit_ to be broken, and has been adapted t
 
 But a one-time intervention is not enough. We're also drawing from research on [retraining how we *see* (literally) our colleagues.][2]
 
-And, we're talking a scientific approach to our systemic interventions, as well - rather than letting managers make critical decisions when they're cognitively loaded (when their unconscious biases will have the maximum impact), we're providing a structured framework for the most high-impact management activities. We intervene in [Meetings][3], [Hiring][4] and more.
+And, we're talking a scientific approach to our systemic interventions, as well - rather than letting managers make critical decisions when they're cognitively loaded (when their unconscious biases will have the maximum impact), we're providing a structured framework for the most high-impact management activities. We intervene during Task Assignment, [Meetings][3], [Hiring][4], Performance Reviews and more.
 
 
 [1]: https://doi.org/10.1016/j.jesp.2017.04.009

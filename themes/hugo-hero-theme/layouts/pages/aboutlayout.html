@@ -7,25 +7,7 @@
 
 <div id="home" class="container pt-8 pb-8 pt-md-10 pb-md-10">
   <div class="row justify-content-center">
-    {{ range .Site.Data.staff }}
-    <div class="col-12 col-md-6 col-lg-4 mb-2">
-      <div class="feature">
-        {{ if .image }}<div class="feature-image"><img alt="{{ .title }} logo" src="{{ $.Site.BaseURL }}{{ .image }}" /></div> {{ end }}
-        <a href="{{ .url }}">
-        <h2 class="feature-title">{{ .title }}</h2></a>
-        <div class="feature-content">{{ .description }}</div>
-      </div>
-    </div>
-    {{end}}
-  </div>
-</div>
-
-
-<div id="home" class="container pt-8 pb-8 pt-md-10 pb-md-10">
-
-<h1 class="justify-content-center">Advisory Board</h1>
-  <div class="row justify-content-center">
-    {{ range .Site.Data.advisors }}
+    {{ range .Site.Data.features }}
     <div class="col-12 col-md-6 col-lg-4 mb-2">
       <div class="feature">
         {{ if .image }}<div class="feature-image"><img alt="{{ .title }} logo" src="{{ $.Site.BaseURL }}{{ .image }}" /></div> {{ end }}
