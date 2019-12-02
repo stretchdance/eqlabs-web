@@ -27,19 +27,24 @@ theme = "hugo-hero-theme"
 
 
 [[menu.main]]
-    name = "About"
-    url = "/about/"
+    name = "Change"
+    url = "/change/"
     weight = 1
 
 [[menu.main]]
-    name = "Change"
-    url = "/change/"
+    name = "Research"
+    url = "/research/"
     weight = 2
+
+[[menu.main]]
+    name = "About"
+    url = "/about/"
+    weight = 3
 
 [[menu.main]]
     name = "Contact"
     url = "/contact/"
-    weight = 3
+    weight = 4
 
 [permalinks]
   post = "/:year/:month/:day/:slug/"
