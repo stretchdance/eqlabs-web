@@ -13,7 +13,7 @@ Daily priming provides ongoing "prejudice hygiene." Similar to toothbrushing, co
 
 The most critical aspect of our interventions are a set of software tools. These mitigate the most pernicious impacts of unchecked bias, by providing equitable defaults and accountability during task assignment, meetings, credit taking, 1:1s and performance reviews. They are built into the tools that managers use most (Gmail, Outlook, Slack, Teams and Zoom).
 
-![Pyramid of Equity Involvement](/images/pyramid.png)
+<img src="/images/pyramid.png" style="width:100%" alt="Pyramid of Equity Involvement"/>
 
 # Next Steps
 

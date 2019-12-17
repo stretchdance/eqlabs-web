@@ -1,14 +1,14 @@
 ---
-title: "Most Bias Interventions Don't Work"
+title: "Finally, An Intervention That Works"
 weight: 1
-background: 'images/triadleft.png'
+background: 'images/triad.png'
 button: 'Our Interventions'
 buttonLink: 'change'
 ---
 
-Out of over 400 research studies of Unconscious Bias Training, we could only find [one intervention][1] that was scientifically proven to both impact unconscious bias measurements, and also change human behaviour. Now we're working to prove that this can change the workplace.
+Out of over 400 research studies of Unconscious Bias Training, we could only find [one intervention][1] that was scientifically proven to both impact unconscious bias measurements, and also change human behaviour. Now we can help you apply this to the moments that impact every employee's career, every day.
 
-It relies on framing prejudice as a _habit_ to be broken, and has been adapted to apply to both gender and racial bias. More importantly, it's been shown to have long-term impact. 
+It relies on framing prejudice as a _habit_ to be broken, and has been adapted to apply to both gender and racial bias. More importantly, it's been shown to have long-term impacts.
 
 But a one-time intervention is not enough. We're also drawing from research on [retraining how we *see* (literally) our colleagues.][2]
 
