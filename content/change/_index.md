@@ -1,17 +1,18 @@
 ---
-title: 'Our Interventions'
+title: 'Our Products'
 date: 2018-02-22T17:01:34+07:00
 ---
 
-EQ Labs' approach is designed to address the systemic issues of workplace discrimination. This means we're working to reverse unconscious bias, combat conscious bias, and mitigate the impacts of both - in the daily interactions of managers with their teams.
+The bad news is that unconscious bias in daily interactions add up, and undermine formal processes for diversity and inclusion in hiring, talent identification, and promotion.
+The good news is that these everyday behaviours can be changed without radically reshaping anyone's internal landscape.
 
-We approach this with a unique mix of training, daily content, and software tools.
+* We are focused on working with managers (rather than the overall team).
+* We care about the career-impacting interactions (especially around task assignment, credit taking and promotions)
+* We intervene in the moments where managers and team members are interacting every day (meetings, chat and emails)
 
-The training course (a half-day, in-person interactive session for independently motivated people managers at all levels) sets the stage and establishes the appropriate framing (prejudice as habit). We also provide a set of strategies for your staff to use in their ongoing work.
+Much like Duolingo or Headspace, our tools alternate between short micro-learning lessons, and practices within a set of self-guided strategies. But unlike learning a language, the practices focus on activities that happen in the real world.
 
-Daily priming provides ongoing "prejudice hygiene." Similar to toothbrushing, continued exposure to counter-stereotype content helps to mitigate unconscious bias.
-
-The most critical aspect of our interventions are a set of software tools. These mitigate the most pernicious impacts of unchecked bias, by providing equitable defaults and accountability during task assignment, meetings, credit taking, 1:1s and performance reviews. They are built into the tools that managers use most (Gmail, Outlook, Slack, Teams and Zoom).
+TRY screenshots here.
 
 <img src="/images/pyramid.png" style="width:100%" alt="Pyramid of Equity Involvement"/>
 

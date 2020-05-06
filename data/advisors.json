@@ -1,5 +1,11 @@
 [
     {
+      "title": "Amy Herzog",
+      "description": "Digital Transformation Advisor",
+      "image": "features/amy.jpeg",
+      "url": "https://www.linkedin.com/in/amy-herzog-98bb6/"
+    },
+    {
       "title": "Arya Badiyan",
       "description": "Cofounder, Harmony Equity Group",
       "image": "features/arya.jpeg",
@@ -7,7 +13,7 @@
     },
     {
       "title": "Fadzi Ushewokunze",
-      "description": "Digital Transformation Strategist",
+      "description": "AI Architecture Lead, C3.ai",
       "image": "features/fadzi.jpeg",
       "url": "https://www.linkedin.com/in/fadzi-ushewokunze/"
     },
@@ -19,7 +25,7 @@
     },
     {
       "title": "Cornelia Davis",
-      "description": "Vice President, Emerging Technology",
+      "description": "CTO, Weaveworks",
       "image": "features/cornelia.jpeg",
       "url": "https://www.linkedin.com/in/corneliadavis/"
     }

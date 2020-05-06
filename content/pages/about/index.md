@@ -6,10 +6,10 @@ heroHeading: 'The EQ Labs Team'
 heroSubHeading: "Like you, we're motivated to do better."
 heroBackground: 'images/team.jpeg'
 ---
-
+<!-- 
 <div id="home">
 {{< content-strip-left "/pages/about" "content1" >}}
-</div>
+</div> -->
 
 <div>
 {{< content-strip-right "/pages/about" "content3" >}}
