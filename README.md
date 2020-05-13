@@ -1,6 +1,15 @@
 
 [![Netlify Status](https://api.netlify.com/api/v1/badges/528dbda2-763f-433a-ae58-63af9efb1ee7/deploy-status)](https://app.netlify.com/sites/priceless-kilby-cc2be1/deploys)
 
+Messages:
+* We fit in with what y'all are already doing.
+* We focus on micro-coaching for managers in the small interactions that add up
+* This helps address the problems that are habit-based instead of information-based
+
+What if we moved past information to changing behaviours?
+
+Science says it's possible. We can show you how.
+
 # EQ Labs: Workplace Equity through Continuous Intervention
 
 We reduce workplace discrimination by improving manager attitudes and behaviour through science-based continuous intervention. This improves employee retention, engagement and psychological safety.
