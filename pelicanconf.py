@@ -12,9 +12,13 @@ THEME = "nest"
 NEST_HEADER_LOGO = '/images/logo.png'
 NEST_HEADER_IMAGES = 'pxfuel.com.jpg'
 
+NEST_INDEX_HEADER_TITLE = 'MITIGATE BIAS IN THE WORKPLACE.'
+
 PATH = 'content'
 DISPLAY_PAGES_ON_MENU = True
+PAGE_ORDER_BY = 'pageindex'
 DISPLAY_CATEGORIES_ON_MENU = False
+MENUITEMS = (('Extra Item', '/extra'),)
 
 TIMEZONE = 'America/Los_Angeles'
 
