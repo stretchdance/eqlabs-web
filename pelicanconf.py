@@ -7,7 +7,7 @@ SITENAME = 'EQ Labs'
 # SITEURL = 'https://dev.eqlabs.io'
 SITEURL = ''
 # THEME = "/Users/joshuamckenty/pelican-themes/Flex"
-THEME = "twenty-html5up"
+THEME = "nest"
 
 PATH = 'content'
 DISPLAY_PAGES_ON_MENU = True
