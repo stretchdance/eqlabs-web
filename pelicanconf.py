@@ -10,7 +10,7 @@ SITEURL = ''
 THEME = "nest"
 
 NEST_HEADER_LOGO = '/images/logo.png'
-
+NEST_HEADER_IMAGES = 'pxfuel.com.jpg'
 
 PATH = 'content'
 DISPLAY_PAGES_ON_MENU = True
