@@ -9,11 +9,12 @@ SITEURL = ''
 # THEME = "/Users/joshuamckenty/pelican-themes/Flex"
 THEME = "nest"
 
-NEST_HEADER_LOGO = '/image/logo.png'
+NEST_HEADER_LOGO = '/images/logo.png'
 
 
 PATH = 'content'
 DISPLAY_PAGES_ON_MENU = True
+DISPLAY_CATEGORIES_ON_MENU = False
 
 TIMEZONE = 'America/Los_Angeles'
 
