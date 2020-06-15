@@ -1,4 +1,4 @@
-Title: Contact Us
+Title: Contact
 Date: 2020-06-14
 Category: Basics
 

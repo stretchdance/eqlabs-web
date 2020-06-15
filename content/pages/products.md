@@ -1,4 +1,4 @@
-Title: EQ Labs Products
+Title: Products
 Date: 2020-06-14
 Category: Basics
 

@@ -1,4 +1,4 @@
-Title: About EQ Labs
+Title: About
 Date: 2020-06-14
 Category: Basics
 
