@@ -4,9 +4,13 @@ from __future__ import unicode_literals
 
 AUTHOR = 'Joshua McKenty'
 SITENAME = 'EQ Labs'
+# SITEURL = 'https://dev.eqlabs.io'
 SITEURL = ''
+# THEME = "/Users/joshuamckenty/pelican-themes/Flex"
+THEME = "twenty-html5up"
 
 PATH = 'content'
+DISPLAY_PAGES_ON_MENU = True
 
 TIMEZONE = 'America/Los_Angeles'
 

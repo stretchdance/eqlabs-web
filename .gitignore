@@ -1,5 +1,7 @@
 # Pelican default output directory
 /output
+/eqlabs-web  
+# venv folder
 **.pyc
 
 # OSX
