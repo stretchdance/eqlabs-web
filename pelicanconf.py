@@ -9,6 +9,9 @@ SITEURL = ''
 # THEME = "/Users/joshuamckenty/pelican-themes/Flex"
 THEME = "nest"
 
+NEST_HEADER_LOGO = '/image/logo.png'
+
+
 PATH = 'content'
 DISPLAY_PAGES_ON_MENU = True
 
@@ -37,3 +40,11 @@ DEFAULT_PAGINATION = False
 
 # Uncomment following line if you want document-relative URLs when developing
 #RELATIVE_URLS = True
+
+# Static files
+STATIC_PATHS = ['images', 'extra/robots.txt', 'extra/favicon.ico', 'extra/logo.svg']
+EXTRA_PATH_METADATA = {
+    'extra/robots.txt': {'path': 'robots.txt'},
+    'extra/favicon.ico': {'path': 'favicon.ico'},
+    'extra/logo.svg': {'path': 'logo.svg'}
+}
