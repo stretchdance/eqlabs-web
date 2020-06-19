@@ -121,7 +121,7 @@
         {% endblock headerstyle %}
 
             <!-- Static navbar -->
-            <div class="container">
+            <div id="stickyheadernav" class="container">
                 <div class="header-nav">
                     <div class="header-logo">
                         <a class="pull-left" href="{{ SITEURL }}/"><img class="mr20" src="{{ SITEURL }}{{NEST_HEADER_LOGO or "/logo.svg" }}" alt="logo"></a>
@@ -208,5 +208,24 @@
             </div>
         </div>
         <!-- /Footer -->
+        <script>
+            // When the user scrolls the page, execute myFunction 
+            window.onscroll = function() {stickyHeader()};
+
+            // Get the header
+            var header = document.getElementById("stickyheadernav");
+
+            // Get the offset position of the navbar
+            var sticky = header.offsetTop;
+
+            // Add the sticky class to the header when you reach its scroll position. Remove "sticky" when you leave the scroll position
+            function stickyHeader() {
+            if (window.pageYOffset > sticky) {
+                header.classList.add("sticky");
+            } else {
+                header.classList.remove("sticky");
+            }
+            }
+        </script>
     </body>
 </html>

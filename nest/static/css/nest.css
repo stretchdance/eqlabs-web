@@ -6,17 +6,17 @@
 
 /* Responsive */
 @media (min-width: 768px) {
-  .container {
+  .container, .header-nav {
     width: 750px;
   }
 }
 @media (min-width: 992px) {
-  .container {
+  .container, .header-nav {
     width: 850px;
   }
 }
 @media (min-width: 1200px) {
-  .container {
+  .container, .header-nav {
     /* width: 850px; */
     width: 95%;
   }
@@ -175,14 +175,16 @@ h4:after {
 
 /* Navbar */
 .header-nav{
-    height:100px;
-    line-height:100px;
+    height:80px;
+    line-height:80px;
     color:#fff;
 
     font-family: Spartan;
     font-style: normal;
     font-weight: 300;
     font-size: 14px;
+    margin-left: auto;
+    margin-right: auto;
 /* line-height: 24px; */
     /* background-color: #fff; */
 }
@@ -202,13 +204,16 @@ h4:after {
     color:#fff;
     /* font-weight:600; */
     opacity: 1;
-    background-color: rgba(0,0,0,0.2);
+    /* background-color: rgba(0,0,0,0.2); */
+    border-bottom: 2px solid #fff;
 }
+
 .header-nav .nav .active{
     /*color:#fff;*/
     color:#fff;
     /* font-weight:600; */
-    background-color: rgba(0,0,0,0.2);
+    /* background-color: rgba(0,0,0,0.2); */
+    border-bottom: 2px solid #fff;
 }
 .header-logo {
     font-size:15px;
@@ -233,7 +238,7 @@ h4:after {
 .header-wrapper{
     padding-left: 110px;
     padding-right: 160px;
-    margin-top: 25vh;
+    margin-top: 200px;
 }
 .header-content {
     text-align: left;
@@ -301,6 +306,34 @@ h4:after {
 .header-tags a {
     color: #fff;
 }
+
+
+/* The sticky class is added to the header with JS when it reaches its scroll position */
+.sticky {
+    position: fixed;
+    top: 0;
+    left: 0;
+    /* left: 40px; */
+    width: 100%;
+    z-index: 100;
+    transition: all 0.3s ease-out;
+  }
+
+#stickyheadernav {
+    width: 100%;
+    transition: all 0.3s ease-out;
+}
+
+#stickyheadernav.sticky {
+    background: #1B31D4;
+}
+  
+  /* Add some top padding to the page content to prevent sudden quick movement (as the header gets a new position at the top of the page (position:fixed and top:0) */
+  .sticky + .header-wrapper {
+      margin-top: 0px;
+      padding-top: 300px;
+
+  }
 
 /* Content */
 
