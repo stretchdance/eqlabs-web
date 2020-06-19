@@ -19,7 +19,7 @@ PATH = 'content'
 DISPLAY_PAGES_ON_MENU = True
 PAGE_ORDER_BY = 'pageindex'
 DISPLAY_CATEGORIES_ON_MENU = False
-MENUITEMS = (('Extra Item', '/extra'),)
+# MENUITEMS = (('Extra Item', '/extra'),)
 
 TIMEZONE = 'America/Los_Angeles'
 
