@@ -25,11 +25,18 @@
 /* Default styling */
 body {
     /* font-family: "Open Sans", sans-serif; */
-    font-family: Nunito;
+    /* font-family: Nunito; */
 /*    font-size: 15px;*/
-    color: #4b505a;
-    background-color: #f5f5f5;
-    line-height: 24px;
+
+font-family: Spartan;
+font-style: normal;
+font-weight: 400;
+font-size: 20px;
+line-height: 150%;
+color: #333333;
+    /* color: #4b505a; */
+    background-color: #FFFFFF;
+    /* line-height: 24px; */
     -webkit-font-smoothing:antialiased;
     text-rendering: optimizeLegibility;
 }
@@ -118,6 +125,18 @@ code { padding: 3px 6px; }
 
 /* Titles */
 
+.main-title:before, .secondary-title:after {
+    display: block;
+    content: " ";
+    margin-bottom: 28px;
+    width: 66px;
+    border: 3px solid #219BF4;
+}
+
+.secondary-title:after {
+    margin-top: 28px;
+}
+
 h1 { 
     font-size: 28px;
     line-height: 1.285714285714286em; 
@@ -127,50 +146,83 @@ h1 {
 }
 
 h2 { 
-    font-size: 20px;
+    /* font-size: 20px;
     line-height: 1.285714285714286em; 
-    font-weight: 600;
+    font-weight: 600; */
     margin-top: 40px;   
-    margin-bottom: 40px;
-}
-h2:after {
-    display: block;
-    content: " ";
-    margin-top: 10px;
-    width: 40px;
-    border-bottom: 3px solid rgba(235,35,68,1);
-    /*border-bottom: 3px solid rgba(0,0,0,0.2);*/
+    margin-bottom: 16px;
+
+
+    font-family: Spartan;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 28px;
+    line-height: 38px;
+    /* identical to box height, or 136% */
+    
+    
+    /* EQ Labs — Cobalt */
+    
+    color: #1B31D4;
+
 }
 
 h3 { 
-    font-size: 16px;
-    line-height: 1.285714285714286em; 
-    font-weight: 600;
-    margin-top: 30px; 
-    margin-bottom: 30px;
+    font-family: Spartan;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 35px;
+    line-height: 140%;
+    /* or 49px */
+    
+    text-align: center;
+    
+    /* EQ Labs — Cobalt */
+    
+    color: #1B31D4;
+    margin-top: 52px; 
+    margin-bottom: 32px;
 }
-h3:after {
+/* h3:after {
     display: block;
     content: " ";
     margin-top: 10px;
     width: 40px;
     border-bottom: 3px solid rgba(235,35,68,1);
-}
+} */
 
 h4 { 
     font-size: 12px;
     line-height: 1.285714285714286em; 
     font-weight: 600;
-    margin-top: 30px; 
-    margin-bottom: 30px;
+    margin-top: 10px; 
+    margin-bottom: 40px;
     text-transform: uppercase;
+
+    font-family: Spartan;
+font-style: normal;
+font-weight: 500;
+font-size: 18px;
+line-height: 20px;
+text-align: center;
+letter-spacing: 2px;
+text-transform: uppercase;
+
+/* EQ Labs — Cobalt */
+
+color: #1B31D4;
 }
+
 h4:after {
     display: block;
     content: " ";
-    margin-top: 10px;
-    width: 40px;
-    border-bottom: 3px solid rgba(0,0,0,0.2);    
+    margin-top: 20px;
+    width: 88px;
+    left: 50%;
+    position: absolute;
+    margin-left: -44px;
+    /* border-bottom: 3px solid rgba(0,0,0,0.2);   */
+    border: 3px solid #1B31D4;  
 }
 
 /* Navbar */
@@ -275,7 +327,7 @@ h4:after {
     text-decoration: underline;
 }
 .header-underline {
-    display: inline-block;
+    /* display: inline-block; */
     margin-top: 10px;
     margin-bottom: 28px;
     width: 66px;
@@ -344,6 +396,32 @@ h4:after {
     border: none !important;
 }
 
+.cta {
+    font-family: Spartan;
+font-style: normal;
+font-weight: 600;
+font-size: 16px;
+line-height: 18px;
+/* identical to box height */
+
+letter-spacing: 2px;
+text-transform: uppercase;
+
+/* EQ Labs — Aqua */
+
+color: #219BF4;
+}
+
+.ma40 {
+    margin: 40px;
+}
+
+.tool-card {
+    background: #FFFFFF;
+    box-shadow: 4px 10px 60px rgba(0, 0, 0, 0.08);
+    border-radius: 8px;
+    height: 473px;
+}
 
 /* The sticky class is added to the header with JS when it reaches its scroll position */
 .sticky {
@@ -365,12 +443,12 @@ h4:after {
     background: #1B31D4;
 }
   
-  /* Add some top padding to the page content to prevent sudden quick movement (as the header gets a new position at the top of the page (position:fixed and top:0) */
-  .sticky + .header-wrapper {
-      margin-top: 0px;
-      padding-top: 300px;
+/* Add some top padding to the page content to prevent sudden quick movement (as the header gets a new position at the top of the page (position:fixed and top:0) */
+.sticky + .header-wrapper {
+    margin-top: 0px;
+    padding-top: 260px;
 
-  }
+}
 
 /* Content */
 
@@ -404,6 +482,47 @@ h4:after {
     font-size: 12px;
     font-weight: 400;
     line-height: 24px;    
+}
+
+.main-title, .secondary-title {
+    color: #333333;
+    text-align: left;
+    font-family: Spartan;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 56px;
+    line-height: 63px;
+}
+
+.main-title-bigger {
+    color: #333333;
+    text-align: left;
+    font-family: Spartan;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 70px;
+    line-height: 80px;
+}
+
+.svg-container {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.svg-container-right {
+    position: absolute;
+    top: 0;
+    right: -3vw;
+    /* width: 100%;
+    height: 100%; */
+}
+
+.sec1 {
+    position: relative;
+    /* width: 100%; */
 }
 
 /* Navigation */
