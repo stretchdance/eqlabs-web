@@ -135,6 +135,9 @@ code { padding: 3px 6px; }
 
 .secondary-title:after {
     margin-top: 28px;
+    position: absolute;
+    left: 50%;
+    margin-left: -33px;
 }
 
 h1 { 
@@ -421,6 +424,23 @@ color: #219BF4;
     box-shadow: 4px 10px 60px rgba(0, 0, 0, 0.08);
     border-radius: 8px;
     height: 473px;
+    max-width: 387px;
+    padding-top: 20px;
+    margin: 0 auto;
+}
+
+.tool-card:hover {
+    background: linear-gradient(356.43deg, #219BF4 -39.19%, #1B31D4 103.11%);
+    box-shadow: 0px 6px 40px #88BEEB;
+    border-radius: 8px;
+    margin-top: -20px;
+    transition: all 0.2s ease-out;
+
+}
+
+.tool-card:hover * {
+    color: white;
+    /* transition: all 0.2s ease-out; */
 }
 
 /* The sticky class is added to the header with JS when it reaches its scroll position */
@@ -492,6 +512,9 @@ color: #219BF4;
     font-weight: bold;
     font-size: 56px;
     line-height: 63px;
+}
+.secondary-title {
+    margin-bottom: 50px;
 }
 
 .main-title-bigger {
