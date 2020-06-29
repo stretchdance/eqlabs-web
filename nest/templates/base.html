@@ -8,6 +8,9 @@
         <meta name="description" content="{% block description %}{% endblock description %}">
         <meta name="keywords" content="{% block keywords %}{% endblock keywords %}">
         <link rel="icon" href="{{ SITEURL }}/favicon.ico">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+        <script src="{{ SITEURL }}/theme/js/jquery.visible.min.js"></script>
+
         {% if NEST_REL_CANONICAL_LINK %}
         <!-- Canonical -->
         {% if article %}
@@ -229,6 +232,30 @@
                 header.classList.remove("sticky");
             }
             }
+        </script>
+        <script>
+            var win = $(window);
+            var allMods = $(".module");
+
+            // Already visible modules
+            allMods.each(function(i, el) {
+            var el = $(el);
+            if (el.visible(true)) {
+                el.addClass("already-visible"); 
+            } 
+            });
+
+            win.scroll(function(event) {
+                console.log("Window scrolling...");
+                allMods.each(function(i, el) {
+                    var el = $(el);
+                    if (el.visible(true)) {
+                        console.log("Newly visible element");
+                        el.addClass("come-in"); 
+                    } 
+                });
+
+            });
         </script>
     </body>
 </html>

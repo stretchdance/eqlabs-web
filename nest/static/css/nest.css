@@ -46,13 +46,15 @@ color: #333333;
 /* 009bff*/
 /* CE2323 */
 a, a:visited { 
-    color: #eb2344; 
+    /* color: #eb2344;  */
     text-decoration: none; 
+    color: inherit;
     transition: all 0.2s ease-out;
 }
 a:hover, a:active{ 
-    text-decoration:underline; 
-    color:#eb2344; 
+    /* text-decoration:underline;  */
+    text-decoration: none;
+    /* color:#eb2344;  */
 /*    opacity: 0.8; */
 }
 
@@ -429,17 +431,28 @@ color: #219BF4;
     margin: 0 auto;
 }
 
+a.module * {
+    text-decoration: none !important;
+}
+
 .tool-card:hover {
     background: linear-gradient(356.43deg, #219BF4 -39.19%, #1B31D4 103.11%);
     box-shadow: 0px 6px 40px #88BEEB;
     border-radius: 8px;
     margin-top: -20px;
     transition: all 0.2s ease-out;
+    cursor: pointer;
+}
 
+a.module:hover * {
+    text-decoration: none !important;
+    cursor: pointer;
 }
 
 .tool-card:hover * {
     color: white;
+    text-decoration: none !important;
+    cursor: pointer;
     /* transition: all 0.2s ease-out; */
 }
 
@@ -470,6 +483,45 @@ color: #219BF4;
 
 }
 
+a.module {
+    display: block;
+}
+
+.come-in {
+    transform: translateX(450px);
+    animation: come-in 1.2s ease forwards;
+}
+.come-in:nth-child(1) {
+    animation-duration: 0.6s; /* So they look staggered */
+}
+.come-in:nth-child(2) {
+    animation-duration: 0.8s; /* So they look staggered */
+}
+.come-in:nth-child(3) {
+    animation-duration: 1.0s; /* So they look staggered */
+}
+.come-in:nth-child(4) {
+    animation-duration: 1.2s; /* So they look staggered */
+}
+
+@keyframes come-in {
+to { transform: translateX(0); }
+}
+
+@keyframes slidein {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+  }
+
+.arrows {
+    animation: 3s infinite linear slidein;
+    border: 1px solid black;
+    transform-origin: 62.4% 20.95%;
+}
 /* Content */
 
 .content{
