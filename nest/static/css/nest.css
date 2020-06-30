@@ -378,10 +378,13 @@ h4:after {
     padding-right: 40px;
     margin-left: 2.5vw;
     /* margin-bottom: 25%; */
+    border: 1px solid #FC5E3B;
 }
 
 .orange-button:hover {
-    background: #FF8A70;
+    background: #Ffffff;
+    color: #FC5E3B;
+    /* cursor: pointer; */
 }
 
 .orange-button a {
@@ -392,14 +395,13 @@ h4:after {
     line-height: 24px;
     /* or 171% */
     margin-left: 0 !important;
-
     text-align: center;
-
     color: #FFFFFF;
 }
 
-.orange-button a:hover {
+.orange-button:hover a:hover, .orange-button:hover a {
     border: none !important;
+    color: #FC5E3B;
 }
 
 .cta {
