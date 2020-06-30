@@ -49,11 +49,12 @@ a, a:visited {
     /* color: #eb2344;  */
     text-decoration: none; 
     color: inherit;
-    transition: all 0.2s ease-out;
+    /* transition: all 0.2s ease-out; */
 }
 a:hover, a:active{ 
     /* text-decoration:underline;  */
     text-decoration: none;
+    cursor: pointer;
     /* color:#eb2344;  */
 /*    opacity: 0.8; */
 }
@@ -440,7 +441,7 @@ a.module * {
     box-shadow: 0px 6px 40px #88BEEB;
     border-radius: 8px;
     margin-top: -20px;
-    transition: all 0.2s ease-out;
+    /* transition: all 0.2s ease-out; */
     cursor: pointer;
 }
 
@@ -487,26 +488,43 @@ a.module {
     display: block;
 }
 
-.come-in {
-    transform: translateX(450px);
-    animation: come-in 1.2s ease forwards;
+.module {
+    opacity: 0.0;
 }
-.come-in:nth-child(1) {
-    animation-duration: 0.6s; /* So they look staggered */
+
+.already-visible {
+    transform: translate(0,0);
+    opacity: 1.0;
+    animation: none;
 }
-.come-in:nth-child(2) {
-    animation-duration: 0.8s; /* So they look staggered */
+
+.slideright.come-in {
+    transform: translateX(650px);
+    opacity: 0.0;
+    animation: come-in 2.2s ease forwards;
 }
-.come-in:nth-child(3) {
-    animation-duration: 1.0s; /* So they look staggered */
+
+.slideleft.come-in {
+    transform: translateX(-650px);
+    opacity: 0.0;
+    animation: come-in 2.2s ease forwards;
 }
-.come-in:nth-child(4) {
-    animation-duration: 1.2s; /* So they look staggered */
+
+.slideup.come-in {
+    transform: translateY(650px);
+    opacity: 0.0;
+    animation: come-in 2.2s ease forwards;
+}
+
+.row > *:nth-child(4n) .come-in {
+    animation-duration: 1.5s;
 }
 
 @keyframes come-in {
-to { transform: translateX(0); }
+    to { transform: translate(0,0); opacity: 1.0; }
 }
+
+
 
 @keyframes slidein {
     from {
@@ -739,4 +757,8 @@ blockquote{
 .footer a{
     /* color: #fff; */
     color: #4F4F4F;
+}
+
+.footer-soft {
+    color: #9A9A9A;
 }

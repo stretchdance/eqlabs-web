@@ -168,21 +168,9 @@
         <div class="footer gradient-2">
             <div class="container footer-container ">
                 <div class="row">
-                    <div class="col-xs-4 col-sm-3 col-md-3 col-lg-3">
-                        <div class="footer-title">{{ NEST_SITEMAP_COLUMN_TITLE }}</div>
-                        <ul class="list-unstyled">
-                            {% for title, link in NEST_SITEMAP_MENU %}
-                            <li><a href="{{ SITEURL }}{{ link }}">{{ title }}</a></li>
-                            {% endfor %}
-                            {% if FEED_ALL_ATOM %}
-                            <li><a href="{{ FEED_DOMAIN }}/{{ FEED_ALL_ATOM }}" type="application/atom+xml" rel="alternate">{{ NEST_SITEMAP_ATOM_LINK }}</a></li>
-                            {% endif %}
-                            {% if FEED_ALL_RSS %}
-                            <li><a href="{{ FEED_DOMAIN }}/{{ FEED_ALL_RSS }}" type="application/rss+xml" rel="alternate">{{ NEST_SITEMAP_RSS_LINK }}</a></li>
-                            {% endif %}
-                        </ul>
-                    </div>
-                    <div class="col-xs-4 col-sm-3 col-md-3 col-lg-3">
+                    <div class="col-sm-offset-1 col-lg-offset-1 col-xs-offset-1 col-md-offset-1 col-xs-3 col-sm-2 col-md-2 col-lg-2">
+                        <img class="mr20" style="width: 148px; margin-bottom: 24px;" src="{{ SITEURL }}/images/grey-logo.png" alt="logo">
+                        <div class="footer-soft mr20">{{ EQ_PRIMARY_ADDRESS }}</div>
                         {% if SOCIAL %}
                         <div class="footer-title">{{ NEST_SOCIAL_COLUMN_TITLE }}</div>
                         <ul class="list-unstyled">
@@ -191,8 +179,24 @@
                             {% endfor %}
                         </ul>
                         {% endif %}
+
+                        <ul class="list-unstyled">
+                            {% if FEED_ALL_ATOM %}
+                            <li><a href="{{ FEED_DOMAIN }}/{{ FEED_ALL_ATOM }}" type="application/atom+xml" rel="alternate">{{ NEST_SITEMAP_ATOM_LINK }}</a></li>
+                            {% endif %}
+                            {% if FEED_ALL_RSS %}
+                            <li><a href="{{ FEED_DOMAIN }}/{{ FEED_ALL_RSS }}" type="application/rss+xml" rel="alternate">{{ NEST_SITEMAP_RSS_LINK }}</a></li>
+                            {% endif %}
+                        </ul>
                     </div>
-                    <div class="col-xs-4 col-sm-3 col-md-3 col-lg-3">
+                    <div class="col-xs-3 col-sm-2 col-md-2 col-lg-2">
+                        <div class="footer-title">Products</div>
+                        {% for title, link in NEST_SITEMAP_MENU %}
+                        <li><a href="{{ SITEURL }}{{ link }}">{{ title }}</a></li>
+                        {% endfor %}
+                    </div>
+                    <div class="col-xs-3 col-sm-2 col-md-2 col-lg-2">
+                        <div class="footer-title">Research</div>
                         {% if LINKS %}
                         <div class="footer-title">{{ NEST_LINKS_COLUMN_TITLE }}</div>
                         <ul class="list-unstyled">
@@ -202,13 +206,18 @@
                         </ul>
                         {% endif %}
                     </div> 
-                    <div class="col-xs-12 col-sm-3 col-md-3 col-lg-3">
-                        <p class="pull-right text-right">
-                            <small><em>Proudly powered by <a href="http://docs.getpelican.com/" target="_blank">pelican</a></em></small><br/>
-                            <small><em>Theme by <a href="https://github.com/molivier" target="_blank">molivier</a></em></small><br/>
-                            <small>{{ NEST_COPYRIGHT }}</small>
-                            {% if NEST_FOOTER_HTML %}<small><em>{{ NEST_FOOTER_HTML }}</em></small>{% endif %}
-                        </p>
+                    <div class="col-xs-3 col-sm-2 col-md-2 col-lg-2">
+                        <div class="footer-title">About</div>
+
+                    </div> 
+                    <div class="col-xs-3 col-sm-2 col-md-2 col-lg-2">
+                        <div class="footer-title">Contact</div>
+
+                    </div> 
+                </div>
+                <div class="row">
+                    <div class="col-12 text-center">
+                        <small>{{ NEST_COPYRIGHT }}</small>
                     </div>
                 </div>
             </div>
