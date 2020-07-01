@@ -11,7 +11,7 @@ THEME = "nest"
 
 NEST_HEADER_LOGO = '/images/logo.png'
 NEST_HEADER_IMAGES = 'pxfuel.com.jpg'
-
+NEST_INDEX_HEAD_TITLE = 'Tools for Inclusive Workplaces'
 NEST_INDEX_HEADER_TITLE = 'Overcome Bias In the Workplace'
 NEST_INDEX_HEADER_SUBTITLE = 'PRACTICAL TOOLS FOR MANAGERS'
 

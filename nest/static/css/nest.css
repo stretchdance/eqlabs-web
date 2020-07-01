@@ -181,14 +181,17 @@ h3 {
     line-height: 140%;
     /* or 49px */
     
-    text-align: center;
-    
     /* EQ Labs — Cobalt */
     
     color: #1B31D4;
     margin-top: 52px; 
     margin-bottom: 32px;
 }
+
+.tool-card h3 {  
+    text-align: center;
+}
+
 /* h3:after {
     display: block;
     content: " ";
@@ -765,6 +768,7 @@ blockquote{
 /* Spaces */
 .mr5 { margin-right: 5px;}
 .mr20 { margin-right: 20px;}
+.mt20 { margin-top: 20px;}
 
 /* Gradients */
 .gradient {
@@ -784,23 +788,37 @@ blockquote{
     text-align: left;
 
     /* font-family: Nunito; */
-    font-style: normal;
-    font-weight: bold;
-    font-size: 14px;
-    line-height: 19px;
-    letter-spacing: 0.2em;
+    /* font-style: normal;
+    font-weight: bold; */
+    /* font-size: 14px;
+    line-height: 19px; */
+    /* letter-spacing: 0.2em; */
     /* color: #fff; */
-    color: #4F4F4F;
+    /* color: #4F4F4F; */
+
+    font-family: Spartan;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 20px;
+    /* or 125% */
+
+
+    color: #9A9A9A;
 }
 
 .footer-title {
     text-transform: uppercase;
     margin-bottom: 3px;
-    font-weight: 600;
-    font-size: 12px;
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 16px;
+    letter-spacing: 0.2em;
+    color: #4F4F4F;
 }
+
 .footer-container{
-    padding-top: 20px;
+    padding-top: 60px;
     padding-bottom: 20px;
 }
 .footer a{

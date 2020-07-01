@@ -96,10 +96,10 @@
 <div class="sec1">
     <div class="svg-container-right">
         <svg width="1441" height="1157" viewBox="0 0 1441 1157" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <!-- <path opacity="0.5" d="M1440.32 252.633V1087H-16.6901L1440.32 0V252.633Z" fill="url(#paint0_linear)"/> -->
+
+            <path opacity="0.5" d="M1440.32 252.633V1087H-16.6901L1440.32 0V252.633Z" fill="url(#next0_linear)"/>
+            <path d="M1663.15 369.722V1112H314.219L1663.15 89V369.722Z" fill="url(#next1_linear)"/>
             <path d="M322.886 894.034L332.583 894.035L-7.30283 1149.77L-17 1149.77L152.943 1021.9L322.886 894.034Z" fill="url(#paint2_linear)"/>
-            <!-- paint1_linear -->
-            <path d="M1663.15 369.722V1112H314.219L1663.15 89V369.722Z" fill="url(#paint1_linear)"/>
             <g filter="url(#filter0_d)">
             <mask id="mask0" mask-type="alpha" maskUnits="userSpaceOnUse" x="865" y="202" width="458" height="458">
             <rect x="865.29" y="202.29" width="457.71" height="457.71" fill="#C4C4C4"/>
@@ -179,7 +179,18 @@
                 <path d="M969.581 340.951C946.123 357.696 917.36 365.305 888.69 362.351C860.02 359.397 833.413 346.082 813.862 324.906L842.218 325.621L842.551 312.105L792.743 310.842L791.435 361.806L804.97 362.166L805.634 335.887C826.393 357.638 853.976 371.623 883.791 375.514C913.605 379.405 943.853 372.967 969.499 357.272C995.145 341.577 1014.64 317.572 1024.74 289.252C1034.85 260.933 1034.94 230.007 1025.02 201.624L1012.27 206.069C1020.57 230.157 1020.9 256.274 1013.21 280.563C1005.52 304.852 990.227 326.024 969.581 340.951Z" fill="url(#paint5_linear)"/>
                 <path d="M831.929 149.092C855.397 132.332 884.177 124.718 912.862 127.679C941.548 130.64 968.165 143.973 987.715 165.172L959.191 164.454L958.857 177.969L1008.67 179.232L1010.01 128.324L996.478 127.963L995.872 154.034C975.082 132.348 947.497 118.426 917.702 114.584C887.906 110.741 857.692 117.208 832.08 132.91C806.468 148.612 786.998 172.604 776.906 200.901C766.814 229.198 766.707 260.096 776.603 288.462L789.381 283.997C781.063 259.921 780.709 233.808 788.37 209.516C796.032 185.223 811.304 164.039 831.929 149.092Z" fill="url(#paint5_linear)"/>
             </g>
-            <defs>
+
+                <defs>
+                <linearGradient id="next0_linear" x1="-16.6901" y1="1087" x2="1693.66" y2="798.967" gradientUnits="userSpaceOnUse">
+                <stop stop-color="white"/>
+                <stop offset="0.877725" stop-color="#F0F0F0"/>
+                </linearGradient>
+                <linearGradient id="next1_linear" x1="1450.01" y1="1520" x2="1649.53" y2="236.938" gradientUnits="userSpaceOnUse">
+                <stop offset="0.347903" stop-color="white"/>
+                <stop offset="0.572917" stop-color="#F4F4F4"/>
+                <stop offset="0.885964" stop-color="#F7F7F7"/>
+                </linearGradient>
+          
             <filter id="filter0_d" x="841.29" y="184.29" width="517.71" height="517.71" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
             <feFlood flood-opacity="0" result="BackgroundImageFix"/>
             <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"/>
@@ -235,19 +246,19 @@
 </div>
 
 
-<div class="container" style="margin-top: 170px; margin-bottom: 70px;">
+<div class="container" style="margin-top: 180px; margin-bottom: 70px;">
     <div class="row">
-        <div class='col-lg-offset-2 col-lg-5'>
+        <div class='col-lg-offset-1 col-lg-5'>
             <p class="main-title-bigger" style="z-index: 101; ">We've created science-backed tools to change manager behaviour.</p>
-            <div class="orange-button" style="float: left; margin-left: 0;">
-                <a href="">Join the Pilot</a>
-            </div>
+            <button data-toggle="modal" data-target="#exampleModalCenter" class="orange-button" style="float: left; margin-left: 0;">
+                <a>Join the Pilot</a>
+            </button>
         </div>
     </div>
 </div>
 
 
-<div class="container" style="margin-top: 300px; margin-bottom: 70px; z-index: 1002;">
+<div class="container" style="margin-top: 370px; margin-bottom: 70px; z-index: 1002;">
     <div class="row">
         <div class='col-lg-offset-5 col-lg'>
             <p class="secondary-title">Our Tools</p>
@@ -290,12 +301,14 @@
 <div class="container" style="margin-top: 50px; margin-bottom: 70px; z-index: 1002; width: 100%;">
     <div class="row">
         <div class='col-lg-offset-5 col-lg-2 text-center'>
-            <div class="orange-button" style="float: none; margin-left: 0;">
-                <a href="">Join the Pilot</a>
-            </div>
+            <button class="orange-button" data-toggle="modal" data-target="#exampleModalCenter" style="float: none; margin-left: 0;">
+                <a>Join the Pilot</a>
+            </button>
         </div>
     </div>
 </div>
+
+
 {% endblock content %}
 
 
