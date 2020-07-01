@@ -404,6 +404,19 @@ h4:after {
     color: #FC5E3B;
 }
 
+.chevron-button {
+    position: absolute;
+    width: 34px;
+    height: 34px;
+    left: 50vw;
+    top: 90vh;
+    border: 4px solid #FFFFFF;
+    border-left: none;
+    border-top: none;
+    box-sizing: border-box;
+    transform: rotate(45deg); cursor: pointer;
+}
+
 .cta {
     font-family: Spartan;
 font-style: normal;
@@ -443,7 +456,8 @@ a.module * {
     box-shadow: 0px 6px 40px #88BEEB;
     border-radius: 8px;
     margin-top: -20px;
-    /* transition: all 0.2s ease-out; */
+    /* transform: translateY(-200px); */
+    transition: all 0.2s linear;
     cursor: pointer;
 }
 
@@ -515,11 +529,34 @@ a.module {
 .slideup.come-in {
     transform: translateY(650px);
     opacity: 0.0;
-    animation: come-in 2.2s ease forwards;
+    animation: come-in 1.0s ease forwards;
 }
 
-.row > *:nth-child(4n) .come-in {
+/* .row > div:nth-child(odd).come-in,
+ .row > *:nth-child(3n) .come-in,
+.row > *:nth-child(4n) .come-in { 
     animation-duration: 1.5s;
+} */
+
+.container .row:nth-child(even) > div:nth-child(odd),
+.container .row:nth-child(even) > div:nth-child(odd) .come-in,
+ {
+    animation-duration: 1.2s;
+}
+
+.container .row:nth-child(even) > div:nth-child(even),
+.container .row:nth-child(even) > div:nth-child(even) .come-in {
+    animation-duration: 1.45s;
+}
+
+.container .row:nth-child(odd) > div:nth-child(odd),
+.container .row:nth-child(odd) > div:nth-child(odd) .come-in {
+    animation-duration: 1.7s;
+}
+
+.container .row:nth-child(odd) > div:nth-child(even),
+.container .row:nth-child(odd) > div:nth-child(even) .come-in {
+    animation-duration: 2.0s;
 }
 
 @keyframes come-in {
@@ -550,8 +587,17 @@ a.module {
     padding-bottom: 40px;
     padding-left: 40px;
     padding-right: 40px;
-    border-left: 1px solid rgba(0,0,0,0.1);
-    border-right: 1px solid rgba(0,0,0,0.1);
+    /* border-left: 1px solid rgba(0,0,0,0.1);
+    border-right: 1px solid rgba(0,0,0,0.1); */
+}
+
+.content-right {
+    margin-left: 35vw; 
+}
+
+.big-margin {
+    margin-top: 130px; 
+    margin-bottom: 70px;
 }
 
 .content img{
@@ -611,6 +657,7 @@ a.module {
     position: absolute;
     top: 0;
     right: -3vw;
+    z-index: -1;
     /* width: 100%;
     height: 100%; */
 }
