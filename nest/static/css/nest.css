@@ -133,7 +133,7 @@ code { padding: 3px 6px; }
     content: " ";
     margin-bottom: 28px;
     width: 66px;
-    border: 3px solid #219BF4;
+    border: 3px solid #1B31D4;
 }
 
 .secondary-title:after {
@@ -236,8 +236,8 @@ h4:after {
 
 /* Navbar */
 .header-nav{
-    height:60px;
-    line-height:60px;
+    height:80px;
+    line-height:80px;
     color:#fff;
 
     font-family: Spartan;
@@ -252,7 +252,7 @@ h4:after {
 .header-nav .nav{
     float:right;
 }
-.header-nav .nav a{
+.header-nav .nav a {
     /* font-weight:600; */
     color:#fff;
     text-decoration:none;
@@ -260,6 +260,10 @@ h4:after {
     margin-left: 2.5vw;
     text-transform: uppercase;
     transition: all 0.2s ease-out;
+}
+
+.header-nav .nav button {
+    margin-top: 17px;
 }
 .header-nav .nav a:hover{
     color:#fff;
@@ -286,7 +290,7 @@ h4:after {
     text-decoration: none;
 }
 .header-logo img {
-    width: 180px;
+    width: 150px;
 }
 
 /* Header */
@@ -377,11 +381,13 @@ h4:after {
     line-height: 26px;
     margin-top: 6px;
     padding: 10px;
-    padding-left: 40px;
-    padding-right: 40px;
-    margin-left: 2.5vw;
+    padding-left: 22px;
+    padding-right: 22px;
+    margin-left: 3vw;
+    text-transform: uppercase;
     /* margin-bottom: 25%; */
-    border: 1px solid #FC5E3B;
+    /* border: 1px solid #FC5E3B; */
+    border: none;
 }
 
 .orange-button:hover {
@@ -436,8 +442,13 @@ text-transform: uppercase;
 color: #219BF4;
 }
 
+.module:hover .cta {
+    text-decoration: underline;
+}
+
 .ma40 {
     margin: 40px;
+    margin-top: 60px;
 }
 
 .tool-card {
@@ -446,32 +457,24 @@ color: #219BF4;
     border-radius: 8px;
     height: 473px;
     max-width: 387px;
-    padding-top: 20px;
+    padding-top: 10px;
     margin: 0 auto;
-}
-
-a.module * {
-    text-decoration: none !important;
+    margin-top: 30px;
 }
 
 .tool-card:hover {
     background: linear-gradient(356.43deg, #219BF4 -39.19%, #1B31D4 103.11%);
     box-shadow: 0px 6px 40px #88BEEB;
     border-radius: 8px;
-    margin-top: -20px;
+    margin-top: 10px;
     /* transform: translateY(-200px); */
     transition: all 0.2s linear;
     cursor: pointer;
 }
 
-a.module:hover * {
-    text-decoration: none !important;
-    cursor: pointer;
-}
-
-.tool-card:hover * {
+.tool-card:hover *, .tool-card:hover a {
     color: white;
-    text-decoration: none !important;
+    text-decoration: none;
     cursor: pointer;
     /* transition: all 0.2s ease-out; */
 }
@@ -499,7 +502,7 @@ a.module:hover * {
 /* Add some top padding to the page content to prevent sudden quick movement (as the header gets a new position at the top of the page (position:fixed and top:0) */
 .sticky + .header-wrapper {
     margin-top: 0px;
-    padding-top: 260px;
+    padding-top: 280px;
 
 }
 
@@ -769,6 +772,7 @@ blockquote{
 .mr5 { margin-right: 5px;}
 .mr20 { margin-right: 20px;}
 .mt20 { margin-top: 20px;}
+.mt40 { margin-top: 40px;}
 
 /* Gradients */
 .gradient {
@@ -828,4 +832,8 @@ blockquote{
 
 .footer-soft {
     color: #9A9A9A;
+}
+
+.float-left {
+    float: left !important;
 }
