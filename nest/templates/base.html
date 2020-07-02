@@ -8,8 +8,7 @@
         <meta name="description" content="{% block description %}{% endblock description %}">
         <meta name="keywords" content="{% block keywords %}{% endblock keywords %}">
         <link rel="icon" href="{{ SITEURL }}/favicon.ico">
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-        <script src="{{ SITEURL }}/theme/js/jquery.visible.min.js"></script>
+        <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script> -->
 
         {% if NEST_REL_CANONICAL_LINK %}
         <!-- Canonical -->
@@ -33,12 +32,14 @@
         {% if NEST_CSS_MINIFY %}
         <link href="{{ SITEURL }}/theme/css/all.min.css" rel="stylesheet">
         {% else %}
-        <link href="{{ SITEURL }}/theme/css/bootstrap.min.css" rel="stylesheet">
+        <!-- <link href="{{ SITEURL }}/theme/css/bootstrap.min.css" rel="stylesheet"> -->
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+
         <link href="{{ SITEURL }}/theme/css/fonts.css" rel="stylesheet">
         <link href="{{ SITEURL }}/theme/css/nest.css" rel="stylesheet">
         <link href="{{ SITEURL }}/theme/css/pygment.css" rel="stylesheet">
         {% endif %}
-        <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Nunito" />
+        <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Spartan" />
         <!-- /Stylesheets -->
 
         <!-- RSS Feeds -->
@@ -123,8 +124,32 @@
         {% block headerstyle %}
         {% endblock headerstyle %}
 
+        <nav class="navbar navbar-expand-lg navbar-dark" style="height: 80px;" id="stickyheadernav">
+            <a class="navbar-brand" href="{{ SITEURL }}/"><img class="mr20" style="width: 150px;" src="{{ SITEURL }}{{NEST_HEADER_LOGO or "/logo.svg" }}" alt="logo"></a>
+        
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ml-auto">
+                    {% if DISPLAY_PAGES_ON_MENU %}
+                    {% for pg in pages %}
+                        <li class="nav-item {% if pg == page %} active{% endif %}">
+                        <a class="nav-link"  href="{{ SITEURL }}/{{ pg.url }}">{{ pg.title }}</a>
+                    </li>
+                    {% endfor %}
+                    {% endif %}
+                </ul>
+                <button data-toggle="modal" data-target="#exampleModalCenter" class="orange-button">
+                    <a>Join the Pilot</a>
+                </button>
+            </div>
+        </nav>
+
+
             <!-- Static navbar -->
-            <div id="stickyheadernav" class="container">
+            <!-- <div id="stickyheadernav" class="container">
                 <div class="header-nav">
                     <div class="header-logo">
                         <a class="pull-left" href="{{ SITEURL }}/"><img class="mr20" src="{{ SITEURL }}{{NEST_HEADER_LOGO or "/logo.svg" }}" alt="logo"></a>
@@ -147,7 +172,7 @@
                             </button>
                     </div>
                 </div>
-            </div>
+            </div> -->
             <!-- /Static navbar -->
 
             <!-- Header -->
@@ -257,53 +282,55 @@
             </div>
         </div>
         <!-- /Footer -->
-        <script>
-            // When the user scrolls the page, execute myFunction 
-            window.onscroll = function() {stickyHeader()};
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
 
-            // Get the header
-            var header = document.getElementById("stickyheadernav");
+<script src="{{ SITEURL }}/theme/js/jquery.visible.min.js"></script>
 
-            // Get the offset position of the navbar
-            var sticky = header.offsetTop;
+<script>
+    // When the user scrolls the page, execute myFunction 
+    window.onscroll = function() {stickyHeader()};
 
-            // Add the sticky class to the header when you reach its scroll position. Remove "sticky" when you leave the scroll position
-            function stickyHeader() {
-            if (window.pageYOffset > sticky) {
-                header.classList.add("sticky");
-            } else {
-                header.classList.remove("sticky");
-            }
-            }
-        </script>
-        <script>
-            var win = $(window);
-            var allMods = $(".module");
+    // Get the header
+    var header = document.getElementById("stickyheadernav");
 
-            // Already visible modules
-            allMods.each(function(i, el) {
+    // Get the offset position of the navbar
+    var sticky = header.offsetTop;
+
+    // Add the sticky class to the header when you reach its scroll position. Remove "sticky" when you leave the scroll position
+    function stickyHeader() {
+    if (window.pageYOffset > sticky) {
+        header.classList.add("sticky");
+    } else {
+        header.classList.remove("sticky");
+    }
+    }
+</script>
+<script>
+    var win = $(window);
+    var allMods = $(".module");
+
+    // Already visible modules
+    allMods.each(function(i, el) {
+    var el = $(el);
+    if (el.visible(true)) {
+        el.addClass("already-visible"); 
+    } 
+    });
+
+    win.scroll(function(event) {
+        console.log("Window scrolling...");
+        allMods.each(function(i, el) {
             var el = $(el);
             if (el.visible(true)) {
-                el.addClass("already-visible"); 
+                console.log("Newly visible element");
+                el.addClass("come-in"); 
             } 
-            });
+        });
 
-            win.scroll(function(event) {
-                console.log("Window scrolling...");
-                allMods.each(function(i, el) {
-                    var el = $(el);
-                    if (el.visible(true)) {
-                        console.log("Newly visible element");
-                        el.addClass("come-in"); 
-                    } 
-                });
-
-            });
-        </script>
-<!-- <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script> -->
-<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
-<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
-
+    });
+</script>
 <script type="text/javascript">!function(e,t,n){function a(){var e=t.getElementsByTagName("script")[0],n=t.createElement("script");n.type="text/javascript",n.async=!0,n.src="https://beacon-v2.helpscout.net",e.parentNode.insertBefore(n,e)}if(e.Beacon=n=function(t,n,a){e.Beacon.readyQueue.push({method:t,options:n,data:a})},n.readyQueue=[],"complete"===t.readyState)return a();e.attachEvent?e.attachEvent("onload",a):e.addEventListener("load",a,!1)}(window,document,window.Beacon||function(){});</script>
 <script type="text/javascript">window.Beacon('init', 'cc234a67-782c-4105-a5bf-1d81c1d48579')</script>
     </body>
