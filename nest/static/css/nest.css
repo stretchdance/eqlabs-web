@@ -7,12 +7,12 @@
 /* Responsive */
 
 /* Older browsers */
-html { font-size: 12px; }
+html { font-size: 16px; }
 
 /* Modern browsers only need this one */
 
 @media screen and (min-width: 25em){
-  html { font-size: calc( 12px + (17 - 12) * (100vw - 400px) / (800 - 400) ); }
+  html { font-size: calc( 16px + (24 - 16) * (100vw - 400px) / (800 - 400) ); }
 }
 
 
@@ -40,9 +40,6 @@ p { font-size: 1.3em; }
         transition: none !important;
     }
 
-    .header-title {
-        /* font-size: 55px !important; */
-    }
     .main-title-bigger {
         /* font-size: 35px !important;
         line-height: 40px !important; */
@@ -66,8 +63,11 @@ p { font-size: 1.3em; }
 }
 
 .header-title {
-    /* font-size: 65px !important; */
+    /* font-size: 55px !important; */
+    font-size: 2.6em !important;
 }
+
+.header-wrapper
 
 }
 @media (min-width: 992px) and (max-width: 1199px) {
@@ -403,7 +403,8 @@ a.nav-link:hover{
     height: 100vh;
 }
 .header-wrapper{
-    margin-top: 200px;
+    /* margin-top: 200px; */
+    margin-top: 8vh;
 }
 .header-content {
     text-align: left;
@@ -415,7 +416,7 @@ a.nav-link:hover{
     font-family: Spartan;
     color: #fff;
     font-weight: 700;
-    font-size: 4.6em;
+    font-size: 3.5em;
     line-height: 1.3em;
 }
 .header-date {
@@ -593,17 +594,18 @@ color: #219BF4;
 /* Add some top padding to the page content to prevent sudden quick movement (as the header gets a new position at the top of the page (position:fixed and top:0) */
 .sticky + .header-wrapper {
     margin-top: 0px;
-    padding-top: 280px;
+    padding-top: calc(8vh + 80px);
 
 }
-
+/* 
 .navbar-collapse.show, .navbar-collapse.show li {
     background-color: #fff;
 }
 
 .navbar-collapse.show .nav-link {
     color: #333333 !important;
-}
+} */
+
 
 a.module {
     display: block;
@@ -923,7 +925,7 @@ blockquote{
 }
 
 .footer-container{
-    padding-top: 60px;
+    /* padding-top: 60px; */
     padding-bottom: 20px;
 }
 .footer a{
