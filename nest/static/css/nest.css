@@ -5,22 +5,107 @@
  */
 
 /* Responsive */
-@media (min-width: 768px) {
-  .container, .header-nav {
+
+@media (max-width: 767px) {
+    .svg-container {
+        display: none;
+    }
+
+    .svg-container-right {
+        display: none;
+    }
+
+    .come-in {
+        transform: none !important;
+        animation: none;
+    }
+
+    .tool-card:hover {
+        margin-top: 30px !important;
+        transition: none !important;
+    }
+
+    .header-title {
+        font-size: 55px !important;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+  .container {
     width: 750px;
   }
+  .main-title-bigger {
+    font-size: 45px !important;
+    line-height: 60px !important;
 }
-@media (min-width: 992px) {
-  .container, .header-nav {
+.svg-container-right {
+    width: 100%;
+    left: 0;
+}
+.svg-container {
+    left: -250px;
+}
+
+.header-title {
+    font-size: 65px !important;
+}
+
+}
+@media (min-width: 992px) and (max-width: 1199px) {
+  .container {
     width: 850px;
   }
+  .main-title-bigger {
+    font-size: 55px !important;
+    line-height: 60px !important;
+}
+.svg-container {
+    left: -200px;
+}
+.svg-container-right {
+    width: 992px;
+    right: 0vw;
+    /* right: auto; */
+}
+
+.svgscale {
+    width: 1199px;
+    height: auto;
+}
+
 }
 @media (min-width: 1200px) {
-  .container, .header-nav {
+  .container {
     /* width: 850px; */
     width: 95%;
+    max-width: 100%;
   }
+  .container {
+    max-width: 1368px;
+  }
+  #stickyheadernav {
+    max-width: 100% !important;
 }
+
+.svg-container-right {
+    /* width: 100%;
+    height: 100%; */
+    /* left: auto; */
+    width: 1440px;
+    right: 0vw !important;
+}
+
+.svg-container {
+    left: 0vw;
+}
+
+.svgscale {
+    width: 1440px;
+    height: auto;
+}
+
+}
+
 
 /* Default styling */
 body {
@@ -239,7 +324,7 @@ h4:after {
 }
 
 /* Navbar */
-.header-nav{
+.header-nav {
     height:80px;
     line-height:80px;
     color:#fff;
@@ -658,15 +743,17 @@ a.module {
 .svg-container {
     position: absolute;
     top: 0;
-    left: 0;
+    /* left: 0; */
     width: 100%;
     height: 100%;
+    z-index: -1;
 }
 
 .svg-container-right {
     position: absolute;
     top: 0;
-    right: -3vw;
+    /* right: 0vw; */
+    /* left: 0; */
     z-index: -1;
     /* width: 100%;
     height: 100%; */
