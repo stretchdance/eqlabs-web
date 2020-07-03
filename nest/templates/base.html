@@ -289,23 +289,24 @@
 <script src="{{ SITEURL }}/theme/js/jquery.visible.min.js"></script>
 
 <script>
-    // When the user scrolls the page, execute myFunction 
-    window.onscroll = function() {stickyHeader()};
 
     // Get the header
     var header = document.getElementById("stickyheadernav");
-
     // Get the offset position of the navbar
     var sticky = header.offsetTop;
 
     // Add the sticky class to the header when you reach its scroll position. Remove "sticky" when you leave the scroll position
     function stickyHeader() {
-    if (window.pageYOffset > sticky) {
-        header.classList.add("sticky");
-    } else {
-        header.classList.remove("sticky");
-    }
-    }
+        if (window.pageYOffset > sticky) {
+            header.classList.add("sticky");
+        } else {
+            header.classList.remove("sticky");
+        }
+    }    
+    // When the user scrolls the page, execute myFunction 
+    window.onscroll = function() {stickyHeader()};
+    stickyHeader();
+
 </script>
 <script>
     var win = $(window);
@@ -319,17 +320,19 @@
     } 
     });
 
-    win.scroll(function(event) {
-        console.log("Window scrolling...");
+    function checkscroll(event) {
+        // console.log("Window scrolling...");
         allMods.each(function(i, el) {
             var el = $(el);
             if (el.visible(true)) {
-                console.log("Newly visible element");
+                // console.log("Newly visible element");
                 el.addClass("come-in"); 
             } 
         });
+    }
+    checkscroll(null);
+    win.scroll(checkscroll);
 
-    });
 </script>
 <script type="text/javascript">!function(e,t,n){function a(){var e=t.getElementsByTagName("script")[0],n=t.createElement("script");n.type="text/javascript",n.async=!0,n.src="https://beacon-v2.helpscout.net",e.parentNode.insertBefore(n,e)}if(e.Beacon=n=function(t,n,a){e.Beacon.readyQueue.push({method:t,options:n,data:a})},n.readyQueue=[],"complete"===t.readyState)return a();e.attachEvent?e.attachEvent("onload",a):e.addEventListener("load",a,!1)}(window,document,window.Beacon||function(){});</script>
 <script type="text/javascript">window.Beacon('init', 'cc234a67-782c-4105-a5bf-1d81c1d48579')</script>

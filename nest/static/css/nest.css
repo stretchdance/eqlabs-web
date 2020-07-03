@@ -7,27 +7,43 @@
 /* Responsive */
 
 /* Older browsers */
-html { font-size: 14px; }
+html { font-size: 18px; }
 
 /* Modern browsers only need this one */
 
-@media screen and (min-width: 25em){
-  html { font-size: calc( 14px + (20 - 14) * (100vw - 400px) / (800 - 400) ); }
-}
+/* @media screen and (min-width: 25em){
+  html { font-size: calc( 14px + (18 - 14) * (100vw - 400px) / (800 - 400) ); }
+} */
 
 
 
 @media (max-width: 767px) {
 
-p { font-size: 1.3em; }
+/* p { font-size: 1.3em; } */
 
+.header-content {
+    font-size: 0.8em;
+}
 
     .svg-container {
         display: none;
     }
 
     .svg-container-right {
-        display: none;
+        /* display: none; */
+        /* position: initial; */
+        position: absolute;
+        right: 0;
+        top: 500px !important;
+    }
+
+    .svgscale {
+        width: 500px;
+    }
+
+    .sec1 {
+        /* position: relative !important; */
+        /* position: fixed; */
     }
 
     .come-in {
@@ -40,20 +56,13 @@ p { font-size: 1.3em; }
         transition: none !important;
     }
 
-    .main-title-bigger {
-        /* font-size: 35px !important;
-        line-height: 40px !important; */
-    }
 }
 
 @media (min-width: 768px) and (max-width: 991px) {
   .container {
     width: 750px;
   }
-  .main-title-bigger {
-    /* font-size: 45px !important;
-    line-height: 60px !important; */
-}
+
 .svg-container-right {
     width: 100%;
     left: 0;
@@ -66,18 +75,13 @@ p { font-size: 1.3em; }
     /* font-size: 55px !important; */
     font-size: 2.6em !important;
 }
-
-.header-wrapper
-
 }
+
 @media (min-width: 992px) and (max-width: 1199px) {
   .container {
     width: 850px;
   }
-  .main-title-bigger {
-    /* font-size: 55px !important;
-    line-height: 60px !important; */
-}
+
 .svg-container {
     left: -200px;
 }
@@ -88,7 +92,7 @@ p { font-size: 1.3em; }
 }
 
 .svgscale {
-    width: 1199px;
+    /* width: 992px; */
     height: auto;
 }
 
@@ -102,15 +106,9 @@ p { font-size: 1.3em; }
   .container {
     max-width: 1368px;
   }
-  #stickyheadernav {
-    max-width: 100% !important;
-}
+
 
 .svg-container-right {
-    /* width: 100%;
-    height: 100%; */
-    /* left: auto; */
-    width: 1440px;
     right: 0vw !important;
 }
 
@@ -119,7 +117,7 @@ p { font-size: 1.3em; }
 }
 
 .svgscale {
-    width: 1440px;
+    width: 1200px;
     height: auto;
 }
 
@@ -297,13 +295,13 @@ h4 {
     text-transform: uppercase;
 
     font-family: Spartan;
-font-style: normal;
-font-weight: 500;
-font-size: 18px;
-line-height: 20px;
-text-align: center;
-letter-spacing: 2px;
-text-transform: uppercase;
+    font-style: normal;
+    font-weight: 500;
+    /* font-size: 18px; */
+    line-height: 20px;
+    text-align: center;
+    letter-spacing: 2px;
+    text-transform: uppercase;
 
 /* EQ Labs — Cobalt */
 
@@ -404,7 +402,8 @@ a.nav-link:hover{
 }
 .header-wrapper{
     /* margin-top: 200px; */
-    margin-top: 8vh;
+    /* margin-top: 0px; */
+    margin-top: calc(10vh);
 }
 .header-content {
     text-align: left;
@@ -595,7 +594,7 @@ color: #219BF4;
 /* Add some top padding to the page content to prevent sudden quick movement (as the header gets a new position at the top of the page (position:fixed and top:0) */
 .sticky + .header-wrapper {
     margin-top: 0px;
-    padding-top: calc(8vh + 80px);
+    padding-top: calc(10vh + 80px);
 
 }
 /* 
@@ -640,15 +639,9 @@ a.module {
     animation: come-in 1.0s ease forwards;
 }
 
-/* .row > div:nth-child(odd).come-in,
- .row > *:nth-child(3n) .come-in,
-.row > *:nth-child(4n) .come-in { 
-    animation-duration: 1.5s;
-} */
-
 .container .row:nth-child(even) > div:nth-child(odd),
-.container .row:nth-child(even) > div:nth-child(odd) .come-in,
- {
+.container .row:nth-child(even) > div:nth-child(odd) .come-in
+{
     animation-duration: 1.2s;
 }
 
@@ -733,7 +726,6 @@ a.module {
 .main-title, .secondary-title {
     color: #333333;
     text-align: left;
-    font-family: Spartan;
     font-style: normal;
     font-weight: bold;
     font-size: 2.5em;
@@ -746,7 +738,6 @@ a.module {
 .main-title-bigger {
     color: #333333;
     text-align: left;
-    font-family: Spartan;
     font-style: normal;
     font-weight: 600;
     font-size: 2.4em;
@@ -889,29 +880,7 @@ blockquote{
 /* Footer */
 
 .footer{
-    /* background-color: #333; */
     background-color: #EDF1F4;
-    /* font-size: 14px;
-    font-weight: 300; */
-    text-align: left;
-
-    /* font-family: Nunito; */
-    /* font-style: normal;
-    font-weight: bold; */
-    /* font-size: 14px;
-    line-height: 19px; */
-    /* letter-spacing: 0.2em; */
-    /* color: #fff; */
-    /* color: #4F4F4F; */
-
-    font-family: Spartan;
-    font-style: normal;
-    font-weight: 300;
-    font-size: 16px;
-    line-height: 20px;
-    /* or 125% */
-
-
     color: #9A9A9A;
 }
 
@@ -921,23 +890,17 @@ blockquote{
     font-weight: bold;
     font-size: 14px;
     line-height: 16px;
-    letter-spacing: 0.2em;
+    letter-spacing: 0.2em; 
     color: #4F4F4F;
 }
 
 .footer-container{
-    /* padding-top: 60px; */
     padding-bottom: 20px;
 }
 .footer a{
-    /* color: #fff; */
     color: #4F4F4F;
 }
 
 .footer-soft {
     color: #9A9A9A;
-}
-
-.float-left {
-    float: left !important;
 }
