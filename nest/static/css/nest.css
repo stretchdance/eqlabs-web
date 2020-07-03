@@ -334,9 +334,13 @@ h4:after {
     /* line-height: 24px; */
     /* background-color: #fff; */
 }
-.header-nav .nav{
-    float:right;
+
+
+.navbar-nav > li {
+    float: left;
+    position: relative;
 }
+
 a.nav-link {
     /* font-weight:600; */
     color:#fff !important;
@@ -348,12 +352,6 @@ a.nav-link {
     text-transform: uppercase;
     transition: all 0.2s ease-out;
     /* border-bottom: 2px solid rgba(0,0,0,0); */
-}
-
-
-.navbar-nav > li {
-    float: left;
-    position: relative;
 }
 
 .active .nav-link:after,
@@ -376,11 +374,57 @@ a.nav-link:hover{
     color:#fff !important;
     opacity: 1;
 }
-/* 
-.active .nav-link{
-    color:#fff;
-    border-bottom: 2px solid #fff;
-} */
+
+
+/* The sticky class is added to the header with JS when it reaches its scroll position */
+.sticky {
+    position: fixed;
+    top: 0;
+    left: 0;
+    /* left: 40px; */
+    width: 100%;
+    z-index: 100;
+    transition: all 0.15s ease-out;
+  }
+
+#stickyheadernav {
+    width: 100%;
+    transition: all 0.15s ease-out;
+}
+
+#stickyheadernav.sticky,
+#stickyheadernav.sticky .navbar-collapse {
+    background: #1B31D4;
+    transition: all 0.15s ease-out;
+}
+  
+/* Add some top padding to the page content to prevent sudden quick movement (as the header gets a new position at the top of the page (position:fixed and top:0) */
+.sticky + .header-wrapper {
+    margin-top: 0px;
+    padding-top: calc(10vh + 80px);
+
+}
+.navbar-collapse.collapsing .navbar-nav, .navbar-collapse.show .navbar-nav
+ {
+    height: 100vh !important;
+  }
+
+.navbar-collapse.collapsing, .navbar-collapse.show {
+    background-color: #1B31D4;
+    margin: 1rem -1rem;
+    padding: 20px 2rem;
+    z-index: 10;
+    font-size: 3em;
+    text-transform: none !important;
+}
+
+.navbar-collapse.show a.nav-link:after {
+   display: none;
+}
+
+.navbar-collapse.show a.nav-link.active:after {
+    display: none;
+}
 
 .header-logo a {
     color: #fff;
@@ -577,44 +621,6 @@ color: #219BF4;
     /* transition: all 0.2s ease-out; */
 }
 
-/* The sticky class is added to the header with JS when it reaches its scroll position */
-.sticky {
-    position: fixed;
-    top: 0;
-    left: 0;
-    /* left: 40px; */
-    width: 100%;
-    z-index: 100;
-    transition: all 0.3s ease-out;
-  }
-
-#stickyheadernav {
-    width: 100%;
-    transition: all 0.3s ease-out;
-}
-
-#stickyheadernav.sticky {
-    background: #1B31D4;
-}
-  
-/* Add some top padding to the page content to prevent sudden quick movement (as the header gets a new position at the top of the page (position:fixed and top:0) */
-.sticky + .header-wrapper {
-    margin-top: 0px;
-    padding-top: calc(10vh + 80px);
-
-}
-/* 
-.navbar-collapse.show, .navbar-collapse.show li {
-    background-color: #fff;
-} */
-
-.navbar-collapse.show a.nav-link:after {
-   display: none;
-}
-
-.navbar-collapse.show a.nav-link.active:after {
-    display: none;
-}
 
 a.module {
     display: block;
