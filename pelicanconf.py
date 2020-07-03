@@ -47,4 +47,12 @@ EXTRA_PATH_METADATA = {
     'extra/logo.svg': {'path': 'logo.svg'}
 }
 
+
+LINKS = (('Privacy Policy', '/pages/privacy.html'), 
+    ('Terms of Use', '/pages/legal.html'))
+
+PRODUCTS = (('EQ Nudge', '/pages/products.html#nudge'), 
+    ('EQ Words', '/pages/products.html#words'),
+    ('EQ Daily', '/pages/products.html#daily'))
+
 NEST_COPYRIGHT = "© 2020 EQlabs. All rights reserved."

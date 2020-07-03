@@ -2,7 +2,7 @@ Title: Products
 Date: 2020-06-14
 Category: Basics
 pageindex: 1
-illustration: productsheader.png
+illustration: productsheader.jpg
 maintitle: It's time for new habits
 
 
@@ -17,3 +17,22 @@ In fact, there are more qualified candidates from underrepresented backgrounds t
 
 
 ## The only place you can really practice new habits
+
+
+<a name="nudge"></a>
+<img src="/images/nudge-screen1.png" style="width: 30%;" class="float-left">
+## EQ Nudge
+
+Behavioral change is never a happy accident.<br clear="all"/>
+
+
+<a name="words"></a>
+## EQ Words
+
+In the modern workplace, more than half of all communication is written - emails, Teams, Slack, and text messaging.
+
+
+<a name="daily"></a>
+<img src="/images/billionaire.png" style="width: 30%;" class="float-left">
+## EQ Daily
+Our brains are bombarded by thousands of pieces of individual content every day, most of which is reinforcing stereotypes. It's time to fight back.<br clear="all"/>

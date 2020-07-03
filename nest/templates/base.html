@@ -143,24 +143,25 @@
             <div class="container footer-container ">
                 <div class="row pt-md-4">
                     <div class="col-xs-3 col-sm-2 col-md-2 col-lg-2 mt20">
-                        <div class="footer-title">Products</div>
-                        {% for title, link in NEST_SITEMAP_MENU %}
-                        <li><a href="{{ SITEURL }}{{ link }}">{{ title }}</a></li>
-                        {% endfor %}
+                        <div class="footer-title"><a href="{{ SITEURL }}/pages/products.html">Products</a></div>
+                        <ul class="list-unstyled mt-3">
+                            {% for title, link in PRODUCTS %}
+                            <li class="mt-1"><a href="{{ SITEURL }}{{ link }}">{{ title }}</a></li>
+                            {% endfor %}
+                        </ul>
                     </div>
                     <div class="col-xs-3 col-sm-2 col-md-2 col-lg-2 mt20">
-                        <div class="footer-title">Research</div>
+                        <div class="footer-title"><a href="{{ SITEURL }}/pages/research.html">Research</a></div>
+                    </div> 
+                    <div class="col-xs-3 col-sm-2 col-md-2 col-lg-2 mt20">
+                        <div class="footer-title"><a href="{{ SITEURL }}/pages/about.html">About</a></div>
                         {% if LINKS %}
-                        <div class="footer-title">{{ NEST_LINKS_COLUMN_TITLE }}</div>
-                        <ul class="list-unstyled">
+                        <ul class="list-unstyled mt-3">
                             {% for name, link in LINKS %}
-                            <li><a href="{{ link }}" target="_blank">{{name}}</a></li>
+                            <li class="mt-1"><a href="{{ SITEURL }}{{ link }}">{{name}}</a></li>
                             {% endfor %}
                         </ul>
                         {% endif %}
-                    </div> 
-                    <div class="col-xs-3 col-sm-2 col-md-2 col-lg-2 mt20">
-                        <div class="footer-title">About</div>
 
                     </div> 
                     <div class="col-xs-3 col-sm-2 col-md-2 col-lg-2 mt20 mb-4">

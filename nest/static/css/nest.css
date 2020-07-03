@@ -177,7 +177,12 @@ a.more{
 
 /* Syntax Highlighting */
 
-pre, code {
+.highlight .err {
+    color: inherit !important;
+    background-color: inherit !important;
+}
+
+/* pre, code {
     background: #f8f7fa;
     padding: 34px;
     font-size: 16px;
@@ -189,8 +194,8 @@ pre, code {
     font-weight: 700; 
 }
 
-code { padding: 3px 6px; }
-
+code { padding: 3px 6px; } */
+/* 
 .linenos pre{
 	border:none;
 	margin-top:20px;
@@ -219,7 +224,7 @@ code { padding: 3px 6px; }
   font-weight: 400;
   font-family: Consolas, monaco, monospace;
   color: #fff;
-}
+} */
 
 /* Titles */
 
@@ -897,9 +902,8 @@ blockquote{
     color: #9A9A9A;
 }
 
-
 .staffphoto {
-    width: 365px;
-    height: 365px;
+    width: 100%;
+    height: auto;
     /* margin: 40px; */
  }

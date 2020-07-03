@@ -18,7 +18,7 @@ maintitle: Think we might be right for you?
 
 <div class="row align-items-center">
     <div class="col-lg-4 offset-lg-2">
-        <img class="staffphoto" src="/images/jmckenty.png" title="Josh McKenty" />
+        <img class="staffphoto" src="/images/jmckenty.jpg" title="Josh McKenty" />
     </div>
     <div class="col-lg-3 ">
         <h2>Joshua McKenty, CEO</h2>
@@ -29,7 +29,7 @@ maintitle: Think we might be right for you?
 <div class="row align-items-center">
     <div class="col-lg-4 offset-lg-5" style="padding: 0px;">
         <div style="position: absolute;
-width: 365px;
+width: 100%;
 left: 0px;
 top: 0%;
 bottom: 0%;
@@ -59,7 +59,7 @@ opacity: 0.2;"> </div>
     </div>
     <div class="col-lg-3 ">
         <h2>Ben Cherian</h2>
-        <p></p>
+        <p>Advisory Board, Atlanta Music Project</p>
     </div>
 </div>
 
@@ -86,7 +86,7 @@ opacity: 0.2;"> </div>
 <div class="row align-items-center mt-4 mb-4">
     <div class="col-lg-4 offset-lg-2" style="padding: 0px;">
             <div style="position: absolute;
-width: 365px;
+width: 100%;
 left: 0px;
 top: 0%;
 bottom: 0%;
