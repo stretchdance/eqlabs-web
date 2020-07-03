@@ -32,19 +32,19 @@ headertitle: Get in touch
 
         <div class="form-group">
             <label for="exampleInputName1">Name</label>
-            <input type="email" class="form-control" id="exampleInputName1" aria-describedby="nameHelp" placeholder="Full name">
+            <input type="name" name="fullname" class="form-control" id="exampleInputName1" aria-describedby="nameHelp" placeholder="Full name">
             <small id="nameHelp" class="form-text text-muted">How should we address you?</small>
         </div>
 
         <div class="form-group">
             <label for="exampleInputEmail1">Email address</label>
-            <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
+            <input type="email" name="emailaddress" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
             <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
         </div>
 
         <div class="form-group">
             <label for="exampleFormControlTextarea1">Message</label>
-            <textarea class="form-control" id="exampleFormControlTextarea1" rows="5"></textarea>
+            <textarea class="form-control" name="message" id="exampleFormControlTextarea1" rows="5"></textarea>
         </div>
 
     </div>
