@@ -3,6 +3,7 @@ Date: 2020-06-14
 Category: Basics
 pageindex: 3
 illustration: piqsels.com-id-zvhwe.jpg
+backurl: /images/back.svg
 headertitle: Our Team
 headersubtitle: Like you, we're motivated to do better
 maintitle: Think we might be right for you?

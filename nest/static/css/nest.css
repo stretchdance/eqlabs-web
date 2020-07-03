@@ -616,9 +616,9 @@ a.module {
 }
 
 .already-visible {
-    transform: translate(0,0);
-    opacity: 1.0;
-    animation: none;
+    transform: translate(0,0) !important;
+    opacity: 1.0 !important;
+    animation: none !important;
 }
 
 .slideright.come-in {
