@@ -2,6 +2,8 @@ Title: Contact
 Date: 2020-06-14
 Category: Basics
 pageindex: 4
+illustration: contactheader.jpg
+backurl: /images/back.svg
 headersubtitle: We'd love to hear from you
 headertitle: Get in touch
 

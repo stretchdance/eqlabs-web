@@ -5,11 +5,13 @@
 
 {% block headerstyle %}
     {% if NEST_HEADER_IMAGES %}
-    <div class="header-container gradient" style="background: linear-gradient(270deg, rgba(27, 49, 212, 0.47) 0%, #1B31D4 100%), url('{{ SITEURL }}/images/{{ NEST_HEADER_IMAGES }}'); background-position: center center; background-size: cover;">
+    <div class="header-container" style="background: linear-gradient(270deg, rgba(27, 49, 212, 0.47) 0%, #1B31D4 100%), url('{{ SITEURL }}/images/{{ NEST_HEADER_IMAGES }}');">
     {% else %}
-    <div class="header-container gradient">
+    <div class="header-container">
     {% endif %}
 {% endblock headerstyle %}
+
+<!-- background: linear-gradient(270deg, rgba(27, 49, 212, 0.47) 0%, #1B31D4 100%),  -->
 
 {% block header %}
     <div class="container header-wrapper">
