@@ -7,12 +7,12 @@
 /* Responsive */
 
 /* Older browsers */
-html { font-size: 16px; }
+html { font-size: 14px; }
 
 /* Modern browsers only need this one */
 
 @media screen and (min-width: 25em){
-  html { font-size: calc( 16px + (24 - 16) * (100vw - 400px) / (800 - 400) ); }
+  html { font-size: calc( 14px + (20 - 14) * (100vw - 400px) / (800 - 400) ); }
 }
 
 
@@ -278,31 +278,15 @@ h2 {
 }
 
 h3 { 
-    font-family: Spartan;
-    font-style: normal;
-    font-weight: bold;
-    font-size: 35px;
-    line-height: 140%;
-    /* or 49px */
-    
-    /* EQ Labs — Cobalt */
-    
     color: #1B31D4;
+}
+
+.tool-card h3 {
     margin-top: 52px; 
     margin-bottom: 32px;
-}
-
-.tool-card h3 {  
+    font-weight: bold;
     text-align: center;
 }
-
-/* h3:after {
-    display: block;
-    content: " ";
-    margin-top: 10px;
-    width: 40px;
-    border-bottom: 3px solid rgba(235,35,68,1);
-} */
 
 h4 { 
     font-size: 12px;
@@ -368,18 +352,34 @@ a.nav-link {
     margin-left: 2.5vw;
     text-transform: uppercase;
     transition: all 0.2s ease-out;
-    border-bottom: 2px solid rgba(0,0,0,0);
+    /* border-bottom: 2px solid rgba(0,0,0,0); */
+}
+
+
+a.nav-link:hover:after {
+    display: block;
+    content: " ";
+    margin-top: 15px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 60px;
+    border: 1px solid #fff;
+    position: absolute;
+    /* right: 0; */
+    /* left: 50%; */
+    /* margin-left: -33px; */
 }
 
 .navbar-nav button {
     align-self: flex-start;
 }
+
 a.nav-link:hover{
     color:#fff !important;
     /* font-weight:600; */
     opacity: 1;
     /* background-color: rgba(0,0,0,0.2); */
-    border-bottom: 2px solid #fff;
+    /* border-bottom: 2px solid #fff; */
 }
 
 .active .nav-link{
@@ -547,7 +547,8 @@ color: #219BF4;
     background: #FFFFFF;
     box-shadow: 4px 10px 60px rgba(0, 0, 0, 0.08);
     border-radius: 8px;
-    height: 473px;
+    /* height: 473px; */
+    height: calc(310px + 8rem);
     max-width: 387px;
     padding-top: 10px;
     margin: 0 auto;
@@ -748,7 +749,7 @@ a.module {
     font-family: Spartan;
     font-style: normal;
     font-weight: 600;
-    font-size: 2.7em;
+    font-size: 2.4em;
     line-height: 1.3em;
 }
 
