@@ -14,7 +14,7 @@
 {% block header %}
     <div class="container header-wrapper">
         <div class="row">
-              <div class="col-lg-12">
+              <div class="col-lg-10 col-xl-11 col-md-10">
                   <div class="header-content">
                     <div class="header-underline"></div>
                     {% if NEST_INDEX_HEADER_SUBTITLE %}
@@ -53,6 +53,29 @@
     </div>
 </div>
 
+<!-- Lesson Modal -->
+<div class="modal" id="videoModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content">
+        <div class="modal-header">
+            <h5 class="modal-title" id="videoModalLongTitle">See an example video lesson</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+            </button>
+        </div>
+        <div class="modal-body">
+            <video id="lessonVideo" style="width: 100%;" controls="true">
+                <source src="https://eqlabsstatic.azureedge.net/lessons/DunningKruger.mp4" type="video/mp4">
+              </video>
+        </div>
+        <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+        </div>
+        </div>
+    </div>
+</div>
+<!-- /Modal -->
+
 <div class="container big-margin">
     <div class="row">
         <div class="offset-lg-3 offset-md-1 col-lg-9">
@@ -61,7 +84,7 @@
     </div>
     <div class="row">
             <div class="offset-lg-3 offset-md-1 col-xs-12 col-sm module slideup mt40">
-                <a href="{{SITEURL}}/lesson" class="">
+                <a data-toggle="modal" data-target="#videoModal">
                 <h3>Micro-lessons on Bias</h3>
                 <p>Bite-sized lessons on what bias is, how to recognize it, and why new habits can overcome it.</p>
                 <div class="cta mt40"><a>Try a Lesson</a></div>
@@ -269,8 +292,8 @@
             <div class="tool-card text-center module slideup">
                 <a href="{{SITEURL}}/nudge">
                     <h3>EQ Nudge</h3>
-                    <h4>APP</h4>
-                    <p class="ma40">Vestibulum rhoncus, ipsum in hendrerit tempor, est sem cursus velit, sit amet eleifend odio erat eget.</p>
+                    <h4>Mobile App</h4>
+                    <p class="ma40">Short video lessons and habit-changing practice, on demand and throughout the day - on iPhone or Android.</p>
                     <a class="cta">See How it Works</a>
                 </a>
             </div>
@@ -279,8 +302,8 @@
             <div class="tool-card text-center module slideup">
                 <a href="{{SITEURL}}/words">
                     <h3>EQ Words</h3>
-                    <h4>Email Plugin</h4>
-                    <p class="ma40">Vestibulum rhoncus, ipsum in hendrerit tempor, est sem cursus velit, sit amet eleifend odio erat eget.</p>
+                    <h4>Email and Chat</h4>
+                    <p class="ma40">AI-powered coaching with inclusive language, right within Outlook, Gmail, or Slack.</p>
                     <a class="cta">See In Action</a>
                 </a>
             </div>
@@ -290,7 +313,7 @@
                 <a href="{{SITEURL}}/daily">
                     <h3>EQ Daily</h3>
                     <h4>Browser Extension</h4>
-                    <p class="ma40">Vestibulum rhoncus, ipsum in hendrerit tempor, est sem cursus velit, sit amet eleifend odio erat eget.</p>
+                    <p class="ma40">Rewire your own stereotypes, every time you open a new browser tab.</p>
                     <a class="cta">Try it out</a>
                 </a>
             </div>
@@ -310,3 +333,14 @@
 
 
 {% endblock content %}
+
+{% block extrascripts %}
+<script>
+$('#videoModal').on('shown.bs.modal', function () {
+    $('#lessonVideo')[0].play();
+  })
+  $('#videoModal').on('hidden.bs.modal', function () {
+    $('#lessonVideo')[0].pause();
+  })
+</script>
+{% endblock %}

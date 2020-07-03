@@ -19,7 +19,6 @@ PATH = 'content'
 DISPLAY_PAGES_ON_MENU = True
 PAGE_ORDER_BY = 'pageindex'
 DISPLAY_CATEGORIES_ON_MENU = False
-# MENUITEMS = (('Extra Item', '/extra'),)
 
 TIMEZONE = 'America/Los_Angeles'
 
@@ -34,16 +33,6 @@ AUTHOR_FEED_RSS = None
 
 NEST_SITEMAP_COLUMN_TITLE = 'Sitemap here'
 EQ_PRIMARY_ADDRESS = '4326 3rd Ave NW<br/>Seattle, WA<br/>98107'
-
-# Blogroll
-# LINKS = (('Pelican', 'http://getpelican.com/'),
-#          ('Python.org', 'http://python.org/'),
-#          ('Jinja2', 'http://jinja.pocoo.org/'),
-#          ('You can modify those links in your config file', '#'),)
-
-# Social widget
-# SOCIAL = (('You can add links in your config file', '#'),
-#           ('Another social link', '#'),)
 
 DEFAULT_PAGINATION = False
 
