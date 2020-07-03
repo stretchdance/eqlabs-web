@@ -459,6 +459,15 @@ a.nav-link:hover{
     color: #fff;
 }
 
+.blue-button {
+    background: #219BF4;
+    box-shadow: 0px 6px 30px rgba(0, 0, 0, 0.15);
+    border-radius: 25px;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 24px;
+}
+
 .orange-button {
     float:right;
     background: #FC5E3B;

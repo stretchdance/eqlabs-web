@@ -3,7 +3,9 @@ Date: 2020-06-14
 Category: Basics
 pageindex: 1
 illustration: productsheader.jpg
-maintitle: It's time for new habits
+headersubtitle: Inclusion is Step Zero, not Step Two
+headertitle: It's time for new habits
+maintitle: Equity is a habit problem
 
 
 Workplace equity isn't just an information problem. 

@@ -31,6 +31,7 @@
 
 {% block content %}
 
+{% if page.maintitle %}
 <div class="container content">
     <div class="row">
         <div >
@@ -38,6 +39,7 @@
         </div>
     </div>
 </div>
+{% endif %}
 
 <div class="container">
         {{ page.content }}
