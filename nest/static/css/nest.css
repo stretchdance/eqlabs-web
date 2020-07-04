@@ -544,9 +544,9 @@ a.nav-link:hover{
     line-height: 26px;
     /* margin-top: 6px; */
     padding: 10px;
-    /* padding-left: 22px;
-    padding-right: 22px; */
-    min-width: 180px;
+    padding-left: 22px;
+    padding-right: 22px;
+    /* min-width: 180px; */
     margin-left: 3vw;
     text-transform: uppercase;
     /* margin-bottom: 25%; */

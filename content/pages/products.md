@@ -36,6 +36,6 @@ In the modern workplace, more than half of all communication is written - emails
 
 
 <a name="daily"></a>
-<img src="/images/billionaire.png" style="width: 30%;" class="float-left">
+<img src="/images/billionaire.png" style="width: 30%;" class="float-right">
 ## EQ Daily
 Our brains are bombarded by thousands of pieces of individual content every day, most of which is reinforcing stereotypes. It's time to fight back.<br clear="all"/>

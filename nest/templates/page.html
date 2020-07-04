@@ -33,15 +33,17 @@
 
 {% block content %}
 
-{% if page.maintitle %}
 <div class="container mt-5 mb-5">
     <div class="row">
         <div >
+            {% if page.maintitle %}
             <p class="main-title">{{ page.maintitle }}</p>
+            {% else %}
+            
+            {% endif %}
         </div>
     </div>
 </div>
-{% endif %}
 
 <div class="container">
         {{ page.content }}

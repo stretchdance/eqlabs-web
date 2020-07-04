@@ -2,10 +2,10 @@ Title: Privacy
 Date: 2020-06-14
 Category: Basics
 status: hidden
+headertitle: Privacy Policy
+headersubtitle: At EQ Labs, we believe that your privacy is a fundamental right.
 
-# Privacy Policy 
- 
-At EQ Labs, we believe that your privacy is a fundamental right. This Privacy Policy describes the kinds of information we collect and how we use and disclose it effective as of the date posted below.   
+This Privacy Policy describes the kinds of information we collect and how we use and disclose it effective as of the date posted below.
 
 ## Your Acceptance of this Privacy Policy
 By accessing our website or using the services, you consent to our collection, storage, use, and disclosure of your information as described in this Privacy Policy. The provisions contained in this Privacy Policy supersede all previous notices and statements regarding our privacy practices with respect to the services. If you do not agree to every provision of this Privacy Policy, you may not access or use the services.
