@@ -15,6 +15,8 @@ NEST_INDEX_HEAD_TITLE = 'Tools for Inclusive Workplaces'
 NEST_INDEX_HEADER_TITLE = 'Overcome Bias in the Workplace'
 NEST_INDEX_HEADER_SUBTITLE = 'PRACTICAL TOOLS FOR MANAGERS'
 
+MAIN_CTA = 'Talk with us'
+
 PATH = 'content'
 DISPLAY_PAGES_ON_MENU = True
 PAGE_ORDER_BY = 'pageindex'
@@ -55,4 +57,4 @@ PRODUCTS = (('EQ Nudge', '/pages/products.html#nudge'),
     ('EQ Words', '/pages/products.html#words'),
     ('EQ Daily', '/pages/products.html#daily'))
 
-NEST_COPYRIGHT = "© 2020 EQlabs. All rights reserved."
+NEST_COPYRIGHT = "© 2020 EQ Labs, Inc. All rights reserved."

@@ -11,7 +11,7 @@
     {% elif NEST_HEADER_IMAGES %}
     <div class="header-container gradient" style="background: linear-gradient(270deg, rgba(27, 49, 212, 0.47) 0%, #1B31D4 100%), url('{{ SITEURL }}/images/{{ NEST_HEADER_IMAGES }}'); background-position: top center; background-size: cover;">
     {% else %}
-    <div class="header-container">
+    <div class="header-container gradient">
     {% endif %}
 {% endblock headerstyle %}
 
@@ -34,7 +34,7 @@
 {% block content %}
 
 {% if page.maintitle %}
-<div class="container content">
+<div class="container mt-5 mb-5">
     <div class="row">
         <div >
             <p class="main-title">{{ page.maintitle }}</p>

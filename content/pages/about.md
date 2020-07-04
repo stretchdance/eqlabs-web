@@ -35,7 +35,7 @@ maintitle: Think we might be right for you?
     </div>
     <div class="col-lg-3 ">
         <h2>Amy Herzog, Head of Transformation</h2>
-        <p></p>
+        <p>Serial entrepreneur and IT executive, Amy's career has spanned national security infosec and a globally-dominant craftmarking software empire.</p>
     </div>
 </div>
 
@@ -46,7 +46,7 @@ maintitle: Think we might be right for you?
     </div>
     <div class="col-lg-3 ">
         <h2>Alexander Kline, Business Development</h2>
-        <p></p>
+        <p>A forward-focused systems thinker with over a decade of experience launching and scaling innovative products and parrtnerships.</p>
     </div>
 </div>
 
@@ -80,7 +80,7 @@ maintitle: Think we might be right for you?
     </div>
     <div class="col-lg-3 ">
         <h2>Ben Cherian</h2>
-        <p>Advisory Board, Atlanta Music Project</p>
+        <p>Entrepreneur, investor, and advisor with a breadth of experience - from cloud and distributed systems, to a board seat for the Atlanta Music Project.</p>
     </div>
 </div>
 
@@ -140,8 +140,8 @@ maintitle: Think we might be right for you?
 </div>
 
 <h1 class="secondary-title text-center" style="margin-top: 60px;">
-Our team is expanding and coalescing.<br/>
- Maybe you are a part of it?</h1>
+Our team is expanding.<br/>
+Maybe you should be a part of it?</h1>
 
 <div class="row" style="margin: 6rem;">
     <div class="col">
