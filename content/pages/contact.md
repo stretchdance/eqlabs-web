@@ -10,7 +10,7 @@ headertitle: Get in touch
 <form data-netlify="true" name="contact" method="POST">
 
 <div class="row">
-    <div class="col d-flex flex-column justify-content-around" style="min-height: 60vh;">
+    <div class="col-xs-12 col-md-6 d-flex flex-column justify-content-around" style="min-height: 60vh;">
 
         <h1 class="main-title">We would be delighted to hear from you.</h1>
         <div>

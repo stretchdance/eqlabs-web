@@ -17,8 +17,6 @@ In fact, there are more qualified candidates from underrepresented backgrounds t
 
 ## High-impact lessons, in bite-sized pieces
 
-
-
 ## The only place you can really practice new habits
 
 
