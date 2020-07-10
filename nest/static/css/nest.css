@@ -762,7 +762,7 @@ a.module {
     line-height: 24px;    
 }
 
-.main-title, .secondary-title {
+.main-title, .secondary-title, .tertiary-title {
     color: #333333;
     text-align: left;
     font-style: normal;
@@ -772,6 +772,9 @@ a.module {
 }
 .secondary-title {
     margin-bottom: 50px;
+}
+.tertiary-title {
+    font-size: 2.0em;
 }
 
 .main-title-bigger {
