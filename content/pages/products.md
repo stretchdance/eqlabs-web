@@ -76,7 +76,7 @@ headertitle: Tools to Overcome Bias
 
 <a name="words"></a>
 <div class="row align-items-center">
-    <div class="col-lg-6">
+    <div class="col-lg-6 text-center">
         <img src="/images/macbookpro-eqword_650w.webp"/>
     </div>
     <div class="col-lg-6">
@@ -87,7 +87,7 @@ headertitle: Tools to Overcome Bias
 
 <a name="daily"></a>
 <div class="row align-items-center mt-1">
-    <div class="offset-lg-1 col-lg-5">
+    <div class="col-lg-6 text-center">
         <img src="/images/eqdaily-inventor_500w.webp"/>
     </div>
     <div class="col-lg-6">
