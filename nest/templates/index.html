@@ -1,0 +1,348 @@
+{% extends "base.html" %}
+
+{% block title %}{{ NEST_INDEX_HEAD_TITLE }} {% if articles_page.has_previous() %}- page {{ articles_page.number }} {% endif %}- {{ super() }}{% endblock title %}
+{% block description %}{{ SITENAME }}, {{ SITESUBTITLE }}{% endblock description %}
+
+{% block headerstyle %}
+    {% if NEST_HEADER_IMAGES %}
+    <div class="header-container" style="background: linear-gradient(270deg, rgba(27, 49, 212, 0.47) 0%, #1B31D4 100%), url('{{ SITEURL }}/images/{{ NEST_HEADER_IMAGES }}');">
+    {% else %}
+    <div class="header-container">
+    {% endif %}
+{% endblock headerstyle %}
+
+<!-- background: linear-gradient(270deg, rgba(27, 49, 212, 0.47) 0%, #1B31D4 100%),  -->
+
+{% block header %}
+    <div class="container header-wrapper">
+        <div class="row">
+              <div class="col-lg-10 col-xl-11 col-md-10">
+                  <div class="header-content">
+                    <div class="header-underline"></div>
+                    {% if NEST_INDEX_HEADER_SUBTITLE %}
+                    <p class="header-subtitle header-subtitle-homepage">{{ NEST_INDEX_HEADER_SUBTITLE }}</p>
+                    {% endif %}
+                      <h1 class="header-title">{{ NEST_INDEX_HEADER_TITLE }}</h1>
+                  </div>
+              </div>
+        </div>
+    </div>
+{% endblock header %}
+
+{% block content %}
+
+<div class="sec1">
+    <div class="svg-container">
+        <svg width="530" height="1252" viewBox="0 0 530 1252" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M-102.035 945.7L-102.035 4.98723e-05L462.552 472.85L-102.035 945.7Z" fill="url(#paint0_linear)"/>
+            <path d="M-34.7144 1251.7L-34.7145 306L529.873 778.85L-34.7144 1251.7Z" fill="url(#paint1_linear)"/>
+            <path d="M247.269 541.452L272.156 661.978L-52.8449 387.6L-77.7324 267.074L247.269 541.452Z" fill="url(#paint2_linear)"/>
+            <defs>
+            <linearGradient id="paint0_linear" x1="600.321" y1="273" x2="-301.972" y2="11.0347" gradientUnits="userSpaceOnUse">
+            <stop stop-color="white"/>
+            <stop offset="1" stop-color="#F0F0F0"/>
+            </linearGradient>
+            <linearGradient id="paint1_linear" x1="411.821" y1="936.5" x2="-7.31034" y2="403.582" gradientUnits="userSpaceOnUse">
+            <stop stop-color="white"/>
+            <stop offset="1" stop-color="#F0F0F0"/>
+            </linearGradient>
+            <linearGradient id="paint2_linear" x1="-97.477" y1="504.672" x2="195.062" y2="346.84" gradientUnits="userSpaceOnUse">
+            <stop stop-color="#219BF4"/>
+            <stop offset="1" stop-color="#1B31D4"/>
+            </linearGradient>
+            </defs>
+            </svg>                
+    </div>
+</div>
+
+<!-- Lesson Modal -->
+<div class="modal" id="videoModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content">
+        <div class="modal-header">
+            <h5 class="modal-title" id="videoModalLongTitle">An example lesson: Dunning Kruger</h5>
+            <button type="button" style="color:#219BF4" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+            </button>
+        </div>
+        <div class="modal-body">
+            <video id="lessonVideo" style="width: 100%;" controls="true">
+                <source src="https://eqlabsstatic.azureedge.net/lessons/DunningKruger.mp4" type="video/mp4">
+              </video>
+        </div>
+        <div class="modal-footer">
+            <button type="button" class="btn btn-primary blue-button" data-dismiss="modal">Close</button>
+        </div>
+        </div>
+    </div>
+</div>
+<!-- /Modal -->
+
+<div class="container big-margin">
+    <div class="row">
+        <div class="offset-lg-3 offset-md-1 col-lg-9">
+            <p class="main-title">What We Do</p>
+        </div>
+    </div>
+    <div class="row">
+            <div class="offset-lg-3 offset-md-1 col-xs-12 col-sm module slideup mt40">
+                <a data-toggle="modal" data-target="#videoModal">
+                <h3>Micro-lessons on Bias</h3>
+                <p>Bite-sized lessons on what bias is, how to recognize it, and why new habits can overcome it.</p>
+                <div class="cta mt40">Try a Lesson</div>
+            </a>
+            </div>
+            <div class="col-xs-12 col-sm module slideup mt40">
+                <a href="{{SITEURL}}/pages/products.html#nudge" class="">
+                <h3>Daily Practices</h3>
+                <p>Build new habits: on your own, in meetings with your team, and when it matters the most.</p>
+                <div class="cta mt40">Try a Practice</div>
+            </a>
+            </div>
+    </div>
+    <div class="row">
+            <div class="offset-lg-3 offset-md-1 col-xs-12 col-sm module slideup mt40">  
+                <a href="{{SITEURL}}/pages/products.html#nudge" class="">          
+                <h3>Real World Feedback</h3>
+                <p>Receive aggregated, anonymous feedback from your coworkers on how you're <em>really</em> doing.</p>
+                <div class="cta mt40">See How it Works</div>
+            </a> 
+            </div>
+            <div class="col-xs-12 col-sm module slideup mt40">
+                <a href="{{SITEURL}}/pages/research.html" class="">
+                <h3>Grounded in Science</h3>
+                <p>Built on the best available understanding of neuroscience and behavioral design, and proven to change outcomes.</p>
+                <div class="cta mt40">See the Research</div>
+            </a>
+            </div>
+    </div>
+</div>
+
+<div class="sec1">
+    <div class="svg-container-right" >
+        <svg class="svgscale" viewBox="0 0 1441 1157" fill="none" xmlns="http://www.w3.org/2000/svg">
+
+            <path opacity="0.5" d="M1440.32 252.633V1087H-16.6901L1440.32 0V252.633Z" fill="url(#next0_linear)"/>
+            <path d="M1663.15 369.722V1112H314.219L1663.15 89V369.722Z" fill="url(#next1_linear)"/>
+            <path d="M322.886 894.034L332.583 894.035L-7.30283 1149.77L-17 1149.77L152.943 1021.9L322.886 894.034Z" fill="url(#paint2_linear)"/>
+            <g filter="url(#filter0_d)">
+            <mask id="mask0" mask-type="alpha" maskUnits="userSpaceOnUse" x="865" y="202" width="458" height="458">
+            <rect x="865.29" y="202.29" width="457.71" height="457.71" fill="#C4C4C4"/>
+            </mask>
+            <g mask="url(#mask0)">
+            <g filter="url(#filter1_d)">
+            <rect x="865.29" y="202.29" width="457.71" height="457.71" fill="url(#paint3_linear)"/>
+            </g>
+            <path opacity="0.1" d="M1499.63 373.828V750.613H813.752L1499.63 231.332V373.828Z" fill="url(#paint4_linear)"/>
+            </g>
+            </g>
+            <circle cx="1055.58" cy="505.568" r="6.06848" fill="white"/>
+            <circle cx="1055.58" cy="435.781" r="6.06848" fill="white"/>
+            <circle cx="1055.58" cy="575.356" r="6.06848" fill="white"/>
+            <circle cx="1055.58" cy="400.887" r="6.06848" fill="white"/>
+            <circle cx="1055.58" cy="540.462" r="6.06848" fill="white"/>
+            <circle cx="1055.58" cy="470.674" r="6.06848" fill="white"/>
+            <circle cx="1055.58" cy="610.25" r="6.06848" fill="white"/>
+            <circle cx="1195.16" cy="365.993" r="6.06848" fill="white"/>
+            <circle cx="1195.16" cy="505.568" r="6.06848" fill="white"/>
+            <circle cx="1195.16" cy="435.781" r="6.06848" fill="white"/>
+            <circle cx="1195.16" cy="575.356" r="6.06848" fill="white"/>
+            <circle cx="1195.16" cy="400.887" r="6.06848" fill="white"/>
+            <circle cx="1195.16" cy="540.462" r="6.06848" fill="white"/>
+            <circle cx="1195.16" cy="470.674" r="6.06848" fill="white"/>
+            <circle cx="1195.16" cy="610.25" r="6.06848" fill="white"/>
+            <circle cx="1125.37" cy="365.993" r="6.06848" fill="white"/>
+            <circle cx="1125.37" cy="505.568" r="6.06848" fill="white"/>
+            <circle cx="1125.37" cy="435.781" r="6.06848" fill="white"/>
+            <circle cx="1125.37" cy="575.356" r="6.06848" fill="white"/>
+            <circle cx="1125.37" cy="400.887" r="6.06848" fill="white"/>
+            <circle cx="1125.37" cy="540.462" r="6.06848" fill="white"/>
+            <circle cx="1125.37" cy="470.674" r="6.06848" fill="white"/>
+            <circle cx="1125.37" cy="610.25" r="6.06848" fill="white"/>
+            <circle cx="1264.94" cy="365.993" r="6.06848" fill="white"/>
+            <circle cx="1264.94" cy="505.568" r="6.06848" fill="white"/>
+            <circle cx="1264.94" cy="435.781" r="6.06848" fill="white"/>
+            <circle cx="1264.94" cy="575.356" r="6.06848" fill="white"/>
+            <circle cx="1264.94" cy="400.887" r="6.06848" fill="white"/>
+            <circle cx="1264.94" cy="540.462" r="6.06848" fill="white"/>
+            <circle cx="1264.94" cy="470.674" r="6.06848" fill="white"/>
+            <circle cx="1264.94" cy="610.25" r="6.06848" fill="white"/>
+            <circle cx="1090.48" cy="365.993" r="6.06848" fill="white"/>
+            <circle cx="1055.58" cy="365.993" r="6.06848" fill="white"/>
+            <circle cx="1090.48" cy="505.568" r="6.06848" fill="white"/>
+            <circle cx="1090.48" cy="435.781" r="6.06848" fill="white"/>
+            <circle cx="1090.48" cy="575.356" r="6.06848" fill="white"/>
+            <circle cx="1090.48" cy="400.887" r="6.06848" fill="white"/>
+            <circle cx="1090.48" cy="540.462" r="6.06848" fill="white"/>
+            <circle cx="1090.48" cy="470.674" r="6.06848" fill="white"/>
+            <circle cx="1090.48" cy="610.25" r="6.06848" fill="white"/>
+            <circle cx="1230.05" cy="365.993" r="6.06848" fill="white"/>
+            <circle cx="1230.05" cy="505.568" r="6.06848" fill="white"/>
+            <circle cx="1230.05" cy="435.781" r="6.06848" fill="white"/>
+            <circle cx="1230.05" cy="575.356" r="6.06848" fill="white"/>
+            <circle cx="1230.05" cy="400.887" r="6.06848" fill="white"/>
+            <circle cx="1230.05" cy="540.462" r="6.06848" fill="white"/>
+            <circle cx="1230.05" cy="470.674" r="6.06848" fill="white"/>
+            <circle cx="1230.05" cy="610.25" r="6.06848" fill="white"/>
+            <circle cx="1160.26" cy="365.993" r="6.06848" fill="white"/>
+            <circle cx="1160.26" cy="505.568" r="6.06848" fill="white"/>
+            <circle cx="1160.26" cy="435.781" r="6.06848" fill="white"/>
+            <circle cx="1160.26" cy="575.356" r="6.06848" fill="white"/>
+            <circle cx="1160.26" cy="400.887" r="6.06848" fill="white"/>
+            <circle cx="1160.26" cy="540.462" r="6.06848" fill="white"/>
+            <circle cx="1160.26" cy="470.674" r="6.06848" fill="white"/>
+            <circle cx="1160.26" cy="610.25" r="6.06848" fill="white"/>
+            <circle cx="1299.84" cy="365.993" r="6.06848" fill="white"/>
+            <circle cx="1299.84" cy="505.568" r="6.06848" fill="white"/>
+            <circle cx="1299.84" cy="435.781" r="6.06848" fill="white"/>
+            <circle cx="1299.84" cy="575.356" r="6.06848" fill="white"/>
+            <circle cx="1299.84" cy="400.887" r="6.06848" fill="white"/>
+            <circle cx="1299.84" cy="540.462" r="6.06848" fill="white"/>
+            <circle cx="1299.84" cy="470.674" r="6.06848" fill="white"/>
+            <circle cx="1299.84" cy="610.25" r="6.06848" fill="white"/>
+            <g class="arrows">
+                <path d="M969.581 340.951C946.123 357.696 917.36 365.305 888.69 362.351C860.02 359.397 833.413 346.082 813.862 324.906L842.218 325.621L842.551 312.105L792.743 310.842L791.435 361.806L804.97 362.166L805.634 335.887C826.393 357.638 853.976 371.623 883.791 375.514C913.605 379.405 943.853 372.967 969.499 357.272C995.145 341.577 1014.64 317.572 1024.74 289.252C1034.85 260.933 1034.94 230.007 1025.02 201.624L1012.27 206.069C1020.57 230.157 1020.9 256.274 1013.21 280.563C1005.52 304.852 990.227 326.024 969.581 340.951Z" fill="url(#paint5_linear)"/>
+                <path d="M831.929 149.092C855.397 132.332 884.177 124.718 912.862 127.679C941.548 130.64 968.165 143.973 987.715 165.172L959.191 164.454L958.857 177.969L1008.67 179.232L1010.01 128.324L996.478 127.963L995.872 154.034C975.082 132.348 947.497 118.426 917.702 114.584C887.906 110.741 857.692 117.208 832.08 132.91C806.468 148.612 786.998 172.604 776.906 200.901C766.814 229.198 766.707 260.096 776.603 288.462L789.381 283.997C781.063 259.921 780.709 233.808 788.37 209.516C796.032 185.223 811.304 164.039 831.929 149.092Z" fill="url(#paint5_linear)"/>
+            </g>
+
+                <defs>
+                <linearGradient id="next0_linear" x1="-16.6901" y1="1087" x2="1693.66" y2="798.967" gradientUnits="userSpaceOnUse">
+                <stop stop-color="white"/>
+                <stop offset="0.877725" stop-color="#F0F0F0"/>
+                </linearGradient>
+                <linearGradient id="next1_linear" x1="1450.01" y1="1520" x2="1649.53" y2="236.938" gradientUnits="userSpaceOnUse">
+                <stop offset="0.347903" stop-color="white"/>
+                <stop offset="0.572917" stop-color="#F4F4F4"/>
+                <stop offset="0.885964" stop-color="#F7F7F7"/>
+                </linearGradient>
+          
+            <filter id="filter0_d" x="841.29" y="184.29" width="517.71" height="517.71" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+            <feFlood flood-opacity="0" result="BackgroundImageFix"/>
+            <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"/>
+            <feOffset dx="6" dy="12"/>
+            <feGaussianBlur stdDeviation="15"/>
+            <feColorMatrix type="matrix" values="0 0 0 0 0.72849 0 0 0 0 0.815874 0 0 0 0 0.8875 0 0 0 1 0"/>
+            <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow"/>
+            <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow" result="shape"/>
+            </filter>
+            <filter id="filter1_d" x="847.29" y="184.29" width="517.71" height="517.71" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+            <feFlood flood-opacity="0" result="BackgroundImageFix"/>
+            <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"/>
+            <feOffset dx="12" dy="12"/>
+            <feGaussianBlur stdDeviation="15"/>
+            <feColorMatrix type="matrix" values="0 0 0 0 0.76924 0 0 0 0 0.795304 0 0 0 0 0.816667 0 0 0 1 0"/>
+            <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow"/>
+            <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow" result="shape"/>
+            </filter>
+            <linearGradient id="paint0_linear" x1="-16.6901" y1="1087" x2="1693.66" y2="798.967" gradientUnits="userSpaceOnUse">
+            <stop stop-color="white"/>
+            <stop offset="0.877725" stop-color="#F0F0F0"/>
+            </linearGradient>
+            <linearGradient id="paint1_linear" x1="241.404" y1="1172.95" x2="-23.1049" y2="929.006" gradientUnits="userSpaceOnUse">
+            <stop stop-color="#219BF4"/>
+            <stop offset="1" stop-color="#1B31D4"/>
+            </linearGradient>
+            <linearGradient id="paint2_linear" x1="1450.01" y1="1520" x2="1649.53" y2="236.938" gradientUnits="userSpaceOnUse">
+            <stop offset="0.347903" stop-color="white"/>
+            <stop offset="0.572917" stop-color="#F4F4F4"/>
+            <stop offset="0.885964" stop-color="#F7F7F7"/>
+            </linearGradient>
+            <linearGradient id="paint3_linear" x1="1094.14" y1="777.362" x2="846.307" y2="302.225" gradientUnits="userSpaceOnUse">
+            <stop stop-color="#219BF4"/>
+            <stop offset="1" stop-color="#1B31D4"/>
+            </linearGradient>
+            <linearGradient id="paint4_linear" x1="1391.25" y1="957.716" x2="1492.37" y2="306.375" gradientUnits="userSpaceOnUse">
+            <stop offset="0.347903" stop-color="white"/>
+            <stop offset="0.572917" stop-color="#F4F4F4"/>
+            <stop offset="0.885964" stop-color="#F7F7F7"/>
+            </linearGradient>
+            <linearGradient id="paint5_linear" x1="986.136" y1="390.303" x2="847.515" y2="274.928" gradientUnits="userSpaceOnUse">
+            <stop stop-color="#219BF4"/>
+            <stop offset="1" stop-color="#1B31D4"/>
+            </linearGradient>
+            <linearGradient id="paint6_linear" x1="939.761" y1="273.14" x2="801.347" y2="157.892" gradientUnits="userSpaceOnUse">
+            <stop stop-color="#219BF4"/>
+            <stop offset="1" stop-color="#1B31D4"/>
+            </linearGradient>
+            </defs>
+            </svg>
+            
+</div>
+</div>
+
+
+<div class="container" style="margin-top: 180px; margin-bottom: 70px;">
+    <div class="row">
+        <div class='offset-lg-1 col-lg-5 col-md-8 col-sm-7'>
+            <p class="main-title-bigger" style="z-index: 101; ">We've created science-backed tools to change manager behaviour.</p>
+            <button data-toggle="modal" data-target="#exampleModalCenter" class="orange-button" style="float: left; margin-left: 0;">
+                <a>{{ MAIN_CTA }}</a>
+            </button>
+        </div>
+    </div>
+</div>
+
+
+<div class="container" style="margin-top: 420px; margin-bottom: 70px; z-index: 1002;">
+    <div class="row">
+        <div class='col-12 ml-auto mr-auto'>
+            <p class="secondary-title text-center">Our Tools</p>
+        </div>
+    </div>
+    <div class="row text-center">
+        <div class="col-md-4 text-center">
+            <div class="tool-card text-center module slideup">
+                <a href="{{SITEURL}}/pages/products.html#nudge">
+                    <h3>EQ Nudge</h3>
+                    <h4>Mobile App</h4>
+                    <p class="ma40">Short video lessons and habit-changing practice, on demand and throughout the day - on iPhone or Android.</p>
+                    <a class="cta">See How it Works</a>
+                </a>
+            </div>
+        </div>
+        <div class="col-md-4 text-center">
+            <div class="tool-card text-center module slideup">
+                <a href="{{SITEURL}}/pages/products.html#words">
+                    <h3>EQ Words</h3>
+                    <h4>Email and Chat</h4>
+                    <p class="ma40">AI-powered coaching with inclusive language, right within Outlook, Gmail, or Slack.</p>
+                    <a class="cta">See In Action</a>
+                </a>
+            </div>
+        </div>
+        <div class="col-md-4 text-center">
+            <div class="tool-card text-center module slideup">
+                <a href="{{SITEURL}}/pages/products.html#daily">
+                    <h3>EQ Daily</h3>
+                    <h4>Browser Extension</h4>
+                    <p class="ma40">Rewire your own stereotypes, every time you open a new browser tab.</p>
+                    <a class="cta">Try it out</a>
+                </a>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="container" style="margin-top: 50px; margin-bottom: 70px; z-index: 1002;">
+    <div class="row">
+        <div class='col text-center'>
+            <button class="orange-button" data-toggle="modal" data-target="#exampleModalCenter" style="float: none; margin-left: 0;">
+                <a>{{ MAIN_CTA }}</a>
+            </button>
+        </div>
+    </div>
+</div>
+
+
+{% endblock content %}
+
+{% block extrascripts %}
+<script>
+$('#videoModal').on('shown.bs.modal', function () {
+    $('#lessonVideo')[0].play();
+  })
+  $('#videoModal').on('hidden.bs.modal', function () {
+    $('#lessonVideo')[0].pause();
+  })
+</script>
+{% endblock %}

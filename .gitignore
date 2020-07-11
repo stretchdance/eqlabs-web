@@ -1,13 +1,9 @@
-# Hugo default output directory
-/public
-/resources
-
-## OS Files
-# Windows
-Thumbs.db
-ehthumbs.db
-Desktop.ini
-$RECYCLE.BIN/
+# Pelican default output directory
+/output
+/eqlabs-web  
+# venv folder
+**.pyc
 
 # OSX
 .DS_Store
+.python-version

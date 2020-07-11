@@ -1,0 +1,6 @@
+Jinja2
+Markdown
+MarkupSafe
+pelican
+Pygments
+
