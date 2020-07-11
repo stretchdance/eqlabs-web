@@ -45,7 +45,36 @@ headersubtitle: Focus on Outcomes
 </div>
 
 <div class="row mt-5">
-    <div class="col-12"><h3>What manager behaviours have the biggest career impacts?</h3>
-    
+    <div class="col-12">
+        <h3 style="font-size: 1.4em; font-weight: 700;" class="blue-line">What manager behaviours have the biggest career impacts?</h3>
+    </div>
+</div>
+<div class="row">
+    <div class="col-11">
+<script src="https://bibbase.org/show?bib=https%3A%2F%2Fapi.zotero.org%2Fgroups%2F2415300%2Fcollections%2F8B2BEAMV%2Fitems%3Fkey%3DeUrIaE5Bzzamvr6hMyJvkrC3%26format%3Dbibtex%26limit%3D100&jsonp=1&theme=simple"></script>
+    </div>
+</div>
+
+
+<div class="row mt-5">
+    <div class="col-12">
+    <h3  style="font-size: 1.4em; font-weight: 700;" class="blue-line">What daily opportunities exist to practice new habits within the workplace?</h3>
+    </div>
+</div>
+<div class="row">
+    <div class="col-11">
+<script src="https://bibbase.org/show?bib=https%3A%2F%2Fapi.zotero.org%2Fgroups%2F2415300%2Fcollections%2FHDKHF5AU%2Fitems%3Fkey%3DeUrIaE5Bzzamvr6hMyJvkrC3%26format%3Dbibtex%26limit%3D100&jsonp=1&theme=simple"></script>
+    </div>
+</div>
+
+
+<div class="row mt-5">
+    <div class="col-12">
+    <h3  style="font-size: 1.4em; font-weight: 700;" class="blue-line">What strategies for mitigating bias have been scientifically validated?</h3>
+    </div>
+</div>
+<div class="row mb-5">
+    <div class="col-11">
+<script src="https://bibbase.org/show?bib=https%3A%2F%2Fapi.zotero.org%2Fgroups%2F2415300%2Fcollections%2FUZM22EUR%2Fitems%3Fkey%3DeUrIaE5Bzzamvr6hMyJvkrC3%26format%3Dbibtex%26limit%3D100&jsonp=1&theme=simple"></script>
     </div>
 </div>
