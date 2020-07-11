@@ -7,7 +7,7 @@ backurl: /images/back.svg
 headersubtitle: Inclusion is Step Zero, not Step Two
 headertitle: Overcome Bias: There's an App for That
 
-<a name="nudge"></a>
+<a name="nudge"> </a>
 <div class="row mt-4 mb-5 align-items-end">
     <div class="col-lg-4"><h1 class="main-title">It's time for new habits.</h1></div>
     <div class="offset-lg-2 col-lg-6"><h3>Overcome Bias with the EQ Nudge Platform: Science-backed micro-coaching for managers.</h3></div>

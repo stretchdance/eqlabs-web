@@ -145,6 +145,14 @@
             <div class="container footer-container ">
                 <div class="row pt-md-4">
                     <div class="col-xs-3 col-sm-3 col-md-2 col-lg-2 mt20">
+                        <div class="footer-title"><a href="{{ SITEURL }}/pages/why.html">Why</a></div>
+                        <ul class="list-unstyled mt-3 d-none d-md-block">
+                            <li class="mt-1"><a href="{{ SITEURL }}/pages/why.html#impacts">Impacts</a></li>
+                            <li class="mt-1"><a href="{{ SITEURL }}/pages/why.html#strategies">Strategies</a></li>
+                            <li class="mt-1"><a href="{{ SITEURL }}/pages/why.html#moments">Moments</a></li>
+                        </ul>
+                    </div> 
+                    <div class="col-xs-3 col-sm-3 col-md-2 col-lg-2 mt20">
                         <div class="footer-title"><a href="{{ SITEURL }}/pages/products.html">Products</a></div>
                         <ul class="list-unstyled mt-3 d-none d-md-block">
                             {% for title, link in PRODUCTS %}
@@ -152,9 +160,6 @@
                             {% endfor %}
                         </ul>
                     </div>
-                    <div class="col-xs-3 col-sm-3 col-md-2 col-lg-2 mt20">
-                        <div class="footer-title"><a href="{{ SITEURL }}/pages/research.html">Research</a></div>
-                    </div> 
                     <div class="col-xs-3 col-sm-3 col-md-2 col-lg-2 mt20">
                         <div class="footer-title"><a href="{{ SITEURL }}/pages/about.html">About</a></div>
                         {% if LINKS %}

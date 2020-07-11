@@ -43,6 +43,7 @@ headersubtitle: Focus on Outcomes
     </div>
 </div>
 
+<a name="impacts"> </a>
 <div class="row mt-5">
     <div class="col-12">
         <h3 style="font-size: 1.4em; font-weight: 700;" class="blue-line">What manager behaviours have the biggest career impacts?</h3>
@@ -55,6 +56,7 @@ headersubtitle: Focus on Outcomes
 </div>
 
 
+<a name="strategies"> </a>
 <div class="row mt-5">
     <div class="col-12">
     <h3  style="font-size: 1.4em; font-weight: 700;" class="blue-line">What strategies for mitigating bias have been scientifically validated?</h3>
@@ -66,6 +68,7 @@ headersubtitle: Focus on Outcomes
     </div>
 </div>
 
+<a name="moments"> </a>
 <div class="row mt-5">
     <div class="col-12">
     <h3  style="font-size: 1.4em; font-weight: 700;" class="blue-line">What daily opportunities exist to practice new habits within the workplace?</h3>

@@ -1,9 +1,7 @@
 # Pelican default output directory
-/output
-/eqlabs-web  
-# venv folder
+output
+eqlabs-web
+eqlabs-web/**
 **.pyc
-
-# OSX
 .DS_Store
 .python-version
