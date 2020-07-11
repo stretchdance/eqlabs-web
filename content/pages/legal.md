@@ -2,6 +2,7 @@ Title: Legal
 Date: 2020-06-14
 Category: Basics
 status: hidden
+pageindex: 6
 headertitle: Terms of Service
 
 

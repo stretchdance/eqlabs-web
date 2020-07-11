@@ -2,6 +2,7 @@ Title: Privacy
 Date: 2020-06-14
 Category: Basics
 status: hidden
+pageindex: 7
 headertitle: Privacy Policy
 headersubtitle: At EQ Labs, we believe that your privacy is a fundamental right.
 
