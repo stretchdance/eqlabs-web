@@ -37,7 +37,6 @@ AUTHOR_FEED_RSS = None
 NEST_SITEMAP_COLUMN_TITLE = 'Sitemap here'
 EQ_PRIMARY_ADDRESS = '4326 3rd Ave NW<br/>Seattle, WA<br/>98107'
 
-GOOGLE_ANALYTICS = 'UA-153564663-1'
 
 DEFAULT_PAGINATION = False
 
@@ -45,7 +44,7 @@ DEFAULT_PAGINATION = False
 #RELATIVE_URLS = True
 
 # Static files
-STATIC_PATHS = ['images', 'extra/robots.txt', 'extra/favicon.ico', 'extra/logo.svg']
+STATIC_PATHS = ['images', 'pdf', 'extra/robots.txt', 'extra/favicon.ico', 'extra/logo.svg']
 EXTRA_PATH_METADATA = {
     'extra/robots.txt': {'path': 'robots.txt'},
     'extra/favicon.ico': {'path': 'favicon.ico'},

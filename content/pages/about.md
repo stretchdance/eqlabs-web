@@ -73,6 +73,31 @@ maintitle: Think we might be right for you?
     </div>
 </div>
 
+
+<div class="row align-items-center">
+    <div class="col-lg-4 offset-lg-5" style="padding: 0px;">
+        <div class="shadebox"> </div>
+        <img class="staffphoto" src="/images/chan.jpg" title="Christopher Chan" />
+    </div>
+    <div class="col-lg-3 ">
+        <h2>Christopher Chan</h2>
+        <p>Doctor of Anthropology, University of Washington. Co-founder of Cut.com. Ethnographic genius.</p>
+    </div>
+</div>
+
+
+<div class="row align-items-center">
+    <div class="col-lg-4 offset-lg-2" style="padding: 0px;">
+        <div class="shadebox"> </div>
+        <img class="staffphoto" src="/images/manish.png" title="Manish Singh" />
+    </div>
+    <div class="col-lg-3 ">
+        <h2>Manish Singh</h2>
+        <p>Mission Control. Manish has built and managed engineering teams working on some of the toughest problems on the planet, and off of it.</p>
+    </div>
+</div>
+
+
 <div class="row align-items-center">
     <div class="col-lg-4 offset-lg-5" style="padding: 0px;">
         <div class="shadebox"> </div>
@@ -128,16 +153,6 @@ maintitle: Think we might be right for you?
     </div>
 </div>
 
-<div class="row align-items-center">
-    <div class="col-lg-4 offset-lg-2" style="padding: 0px;">
-        <div class="shadebox"> </div>
-        <img class="staffphoto" src="/images/manish.png" title="Manish Singh" />
-    </div>
-    <div class="col-lg-3 ">
-        <h2>Manish Singh</h2>
-        <p>Mission Control. Manish has built and managed engineering teams working on some of the toughest problems on the planet, and off of it.</p>
-    </div>
-</div>
 
 <h1 class="secondary-title text-center" style="margin-top: 60px;">
 Our team is expanding.<br/>
