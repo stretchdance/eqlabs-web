@@ -37,6 +37,8 @@ AUTHOR_FEED_RSS = None
 NEST_SITEMAP_COLUMN_TITLE = 'Sitemap here'
 EQ_PRIMARY_ADDRESS = '4326 3rd Ave NW<br/>Seattle, WA<br/>98107'
 
+GOOGLE_ANALYTICS = 'UA-153564663-1'
+
 DEFAULT_PAGINATION = False
 
 # Uncomment following line if you want document-relative URLs when developing
