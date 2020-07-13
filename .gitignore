@@ -1,6 +1,6 @@
-# Pelican default output directory
 output
-eqlabs-web
+eqlabs-web/eqlabs-web
+eqlabs-web/lib/*
 eqlabs-web/**
 **.pyc
 .DS_Store
