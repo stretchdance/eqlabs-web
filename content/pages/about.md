@@ -46,7 +46,7 @@ maintitle: Think we might be right for you?
     </div>
     <div class="col-lg-3 ">
         <h2>Alexander Kline, Business Development</h2>
-        <p>A forward-focused systems thinker with over a decade of experience launching and scaling innovative products and parrtnerships.</p>
+        <p>A forward-focused systems thinker with over a decade of experience launching and scaling innovative products and partnerships.</p>
     </div>
 </div>
 
