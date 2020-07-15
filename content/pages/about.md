@@ -57,7 +57,7 @@ maintitle: Think we might be right for you?
     </div>
     <div class="col-lg-3 ">
         <h2>Molly Heaney-Corns, Sociocultural Lead</h2>
-        <p>Student & Former Canadian National Team Swimmer. Molly brings her background in gender studies and sociology, as well as her passion for working with disadvantaged groups, to her work as analyst.</p>
+        <p>Student and research nerd. Molly brings her background in gender studies and sociology, as well as her passion for working with disadvantaged groups, to her work as analyst.</p>
     </div>
 </div>
 
