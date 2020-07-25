@@ -1,0 +1,25 @@
+{
+    "activitycontinuation": {
+        "apps": [
+            "HGQ33YHN5R.io.eqlabs.nudge-dev-staging",
+            "HGQ33YHN5R.io.eqlabs.nudge-dev"
+        ]
+    },
+    "applinks": {
+        "apps": [],
+        "details": [
+            {
+                "appID": "HGQ33YHN5R.io.eqlabs.nudge-dev-staging",
+                "paths": [
+                    "*"
+                ]
+            },            
+            {
+                "appID": "HGQ33YHN5R.io.eqlabs.nudge-dev",
+                "paths": [
+                    "*"
+                ]
+            }
+        ]
+    }
+}

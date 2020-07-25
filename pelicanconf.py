@@ -44,11 +44,12 @@ DEFAULT_PAGINATION = False
 #RELATIVE_URLS = True
 
 # Static files
-STATIC_PATHS = ['images', 'pdf', 'extra/robots.txt', 'extra/favicon.ico', 'extra/logo.svg']
+STATIC_PATHS = ['images', 'pdf', 'root', '_headers', 'extra/robots.txt', 'extra/favicon.ico', 'extra/logo.svg']
 EXTRA_PATH_METADATA = {
     'extra/robots.txt': {'path': 'robots.txt'},
     'extra/favicon.ico': {'path': 'favicon.ico'},
-    'extra/logo.svg': {'path': 'logo.svg'}
+    'extra/logo.svg': {'path': 'logo.svg'},
+    'root/apple-app-site-association': {'path': 'apple-app-site-association'}
 }
 
 
