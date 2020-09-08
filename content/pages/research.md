@@ -19,7 +19,7 @@ headersubtitle: Focus on Outcomes
             <h1 class="main-title">Our approach is based on three guiding questions.</h1>
         </div>
         <div style="position: relative; color: white; font-weight: 700;">
-            <img src="/images/eqresearch-venndiagram_900w.webp"/>
+            <img src="/images/eqresearch-venndiagram_900w.png"/>
             <div class="col-3 text-center" style="position: absolute; top: 180px; right: 320px;">
                 <h1 style="font-size: 3em;">1</h1>
                 <p>What manager behaviours have the biggest career impacts?</p>

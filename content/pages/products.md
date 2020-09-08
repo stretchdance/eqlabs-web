@@ -14,7 +14,7 @@ headertitle: Overcome Bias: There's an App for That
 </div>
 
 <div class="row">
-<img src="/images/eqsuite.webp"/>
+<img src="/images/eqsuite.png"/>
 </div>
 
 <div class="row mt-5 mb-5">
@@ -29,7 +29,7 @@ headertitle: Overcome Bias: There's an App for That
 
 <div class="row" style="padding-top: 6rem;">
     <div class="offset-lg-2 col-lg-4">
-        <img src="/images/lessons-screenshots_430w.webp"/>
+        <img src="/images/lessons-screenshots_430w.png"/>
     </div>  
     <div class="col-lg-4 mt-5">
         <p class="tertiary-title">High impact lessons, in bite-sized pieces</p>
@@ -44,13 +44,13 @@ headertitle: Overcome Bias: There's an App for That
         <p>Some practices are solo, and can be exercised whenever you has time. Others are meeting practices, and will automatically be sent to your phone just before you start a meeting. </p>
     </div>
     <div class="col-lg-4">
-        <img src="/images/practices-screenshots_430w.webp"/>
+        <img src="/images/practices-screenshots_430w.png"/>
     </div>  
 </div>
 
 <div class="row" >
     <div class="offset-lg-2 col-lg-4">
-        <img src="/images/feedback-screenshot_360w.webp"/>
+        <img src="/images/feedback-screenshot_360w.png"/>
     </div>  
     <div class="col-lg-4 mt-5">
         <p class="tertiary-title">Get anonymous feedback from your team members.</p>
@@ -65,7 +65,7 @@ headertitle: Overcome Bias: There's an App for That
         <p>Of course the best achievement is in seeing the advancing productivity and happiness of your team. But in the early days, our fun set of badges and awards help you to feel that you're on the right track.</p>
     </div>
     <div class="col-lg-4">
-        <img src="/images/progress-screenshots_430w.webp"/>
+        <img src="/images/progress-screenshots_430w.png"/>
     </div>  
 </div>
 
@@ -81,7 +81,7 @@ Within every part of the EQ Nudge Suite, both managers and their teammembers hav
 <a name="words"> </a>
 <div class="row align-items-center">
     <div class="col-lg-6 text-center">
-        <img src="/images/macbookpro-eqword_650w.webp"/>
+        <img src="/images/macbookpro-eqword_650w.png"/>
     </div>
     <div class="col-lg-6">
         <p class="tertiary-title">Language Coach for Email and Chat</p>
@@ -93,7 +93,7 @@ Within every part of the EQ Nudge Suite, both managers and their teammembers hav
 <a name="daily"> </a>
 <div class="row align-items-center mt-1">
     <div class="col-lg-6 text-center">
-        <img src="/images/eqdaily-inventor_500w.webp"/>
+        <img src="/images/eqdaily-inventor_500w.png"/>
     </div>
     <div class="col-lg-6">
         <p class="tertiary-title">Daily Heroes Browser Extension</p>
