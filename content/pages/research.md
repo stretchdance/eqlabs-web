@@ -13,7 +13,7 @@ headersubtitle: Focus on Outcomes
     <h3>Diversity is inevitable. Equity is not.</h3></div>
 </div>
 
-<div class="row mt-5">
+<div class="row mt-5 d-none d-md-block">
     <div class="col-10 offset-1 align-content-end text-right" style="position: relative;">
         <div class="col-4" style="position: absolute; left: 10px; top: 10px;">
             <h1 class="main-title">Our approach is based on three guiding questions.</h1>
@@ -51,7 +51,8 @@ headersubtitle: Focus on Outcomes
 </div>
 <div class="row">
     <div class="col-11">
-<script src="https://bibbase.org/show?bib=https%3A%2F%2Fapi.zotero.org%2Fgroups%2F2415300%2Fcollections%2F8B2BEAMV%2Fitems%3Fkey%3DeUrIaE5Bzzamvr6hMyJvkrC3%26format%3Dbibtex%26limit%3D100&jsonp=1&theme=simple"></script>
+<script src="https://bibbase.org/show?bib=https%3A%2F%2Fapi.zotero.org%2Fgroups%2F2415300%2Fcollections%2F8B2BEAMV%2Fitems%3Fkey%3DGthqKf5lDbu7RmkbnKyJNkh2%26format%3Dbibtex%26limit%3D100&jsonp=1&theme=simple"></script>
+
     </div>
 </div>
 
