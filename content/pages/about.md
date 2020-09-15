@@ -31,11 +31,11 @@ maintitle: Think we might be right for you?
 <div class="row align-items-center">
     <div class="col-lg-4 offset-lg-5" style="padding: 0px;">
         <div class="shadebox"> </div>
-        <img class="staffphoto" src="/images/amy.jpeg" title="Amy Herzog" />
+        <img class="staffphoto" src="/images/reanna2.jpeg" title="Reanna Sexton" />
     </div>
     <div class="col-lg-3 ">
-        <h2>Amy Herzog, Head of Transformation</h2>
-        <p>Serial entrepreneur and IT executive, Amy's career has spanned national security infosec and a globally-dominant craftmarking software empire.</p>
+        <h2>Reanna Sexton, Educational Content Lead</h2>
+        <p>With a background in both sociology and business, Re brings her passion for communication and community engagement to the development of EQ's curriculum and habit-breaking practices.</p>
     </div>
 </div>
 
@@ -61,6 +61,29 @@ maintitle: Think we might be right for you?
     </div>
 </div>
 
+
+
+<div class="row align-items-center">
+    <div class="col-lg-4 offset-lg-2" style="padding: 0px;">
+        <div class="shadebox"> </div>
+        <img class="staffphoto" src="/images/amy.jpeg" title="Amy Herzog" />
+    </div>
+    <div class="col-lg-3 ">
+        <h2>Amy Herzog, Advisory Board Chair</h2>
+        <p>Serial entrepreneur and IT executive, Amy's career has spanned national security infosec and a globally-dominant craftmarking software empire.</p>
+    </div>
+</div>
+
+<div class="row align-items-center">
+    <div class="col-lg-4 offset-lg-5" style="padding: 0px;">
+        <div class="shadebox"> </div>
+        <img class="staffphoto" src="/images/michael-gaston.jpg" title="Michael Gaston" />
+    </div>
+    <div class="col-lg-3 ">
+        <h2>Michael Gaston</h2>
+        <p>Founder of Cut.com. His videos have captured billions of views, drawn the ire of the alt right, inspired cultural trends, imagined new industries into existence, and been featured in everything from TED to TMZ. </p>
+    </div>
+</div>
 
 <div class="row align-items-center mt-4 mb-4">
     <div class="col-lg-4 offset-lg-2" style="padding: 0px;">
@@ -139,17 +162,6 @@ maintitle: Think we might be right for you?
     <div class="col-lg-3 ">
         <h2>Matt Wallaert</h2>
         <p>Scientist, Author and pioneer of Behavioural Design. As founder of GetRaised.com, he has helped secure over $6B worth of raises for underpaid staff.</p>
-    </div>
-</div>
-
-<div class="row align-items-center">
-    <div class="col-lg-4 offset-lg-5" style="padding: 0px;">
-        <div class="shadebox"> </div>
-        <img class="staffphoto" src="/images/michael-gaston.jpg" title="Michael Gaston" />
-    </div>
-    <div class="col-lg-3 ">
-        <h2>Michael Gaston</h2>
-        <p>Founder of Cut.com. His videos have captured billions of views, drawn the ire of the alt right, inspired cultural trends, imagined new industries into existence, and been featured in everything from TED to TMZ. </p>
     </div>
 </div>
 
